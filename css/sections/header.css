@@ -1,0 +1,281 @@
+.header {
+    height: 58px;
+    background-color: #ff9900;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    border-left: 1px solid #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    padding: 15px;
+    height: 58px;
+}
+
+.header ul li img {
+    margin-right: 8px;
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.header a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header_left a:hover {
+    color: #000;
+}
+
+.header_right a {
+    border: 1px solid #fff;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.header_right a:hover {
+    background-color: #212121;
+    border-color: #212121;
+}
+
+.logo {
+    transition: all 1s;
+}
+
+.logo a {
+    display: block;
+    height: 100px;
+}
+
+.logo a svg {
+    height: 100%;
+}
+
+.logo_nav .logo:hover {
+    transform: scale(1.1);
+}
+
+a:hover,
+svg:hover {
+    transition: all 1.2s;
+    fill: #ff9900;
+}
+
+.logo_nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin: auto 0;
+}
+
+.navbar ul {
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+}
+
+/* navbar */
+.navbar ul li.active span {
+    color: #ff9900;
+}
+
+.navbar ul>li>a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.navbar a span {
+    color: #777;
+    position: relative;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.navbar a span::before {
+    color: #ff9900;
+    position: absolute;
+    top: 100%;
+    content: attr(data-description);
+}
+
+.navbar a:hover span {
+    color: #ff9900;
+    transform: translateY(-100%);
+}
+
+.banner {
+    height: 700px;
+    background: url(../../img/banner_big.jpg) center center / cover no-repeat;
+}
+
+.banner .container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.banner_info {
+    width: 400px;
+    text-align: right;
+}
+
+.banner_info h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+.banner_info p {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.logo_nav {
+    position: relative;
+}
+
+.navbar .menu-icon {
+    cursor: pointer;
+    padding: 20px 20px;
+    position: absolute;
+    right: 53px;
+    top: 4px;
+    position: fixed;
+    top: 120px;
+    z-index: 3;
+}
+
+.navbar .menu-icon .navicon {
+    background: #5ce8ed;
+    display: block;
+    height: 2px;
+    position: fixed;
+    right: 55px;
+    transition: .2s ease-out;
+    width: 35px;
+    z-index: 3;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+    background: #5ce8ed;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navbar .menu-icon .navicon:before {
+    top: 8px;
+}
+
+.navbar .menu-icon .navicon:after {
+    top: -8px;
+}
+
+.navbar .menu-btn {
+    display: none;
+}
+
+.navbar .menu-icon {
+    display: none;
+}
+
+.banner_info a {
+    text-transform: uppercase;
+    outline: 1px solid #fff;
+    padding: 8px 40px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.banner_info a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF9900;
+    z-index: -1;
+    transform: rotate(-45deg) translateY(-3em);
+    transform-origin: 0% 100%;
+    transition: all 0.5s;
+}
+
+.banner_info a:hover {
+    outline-color: #FF9900;
+}
+
+.banner_info a:hover::before {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* servis.html   page */
+.banner1 {
+    background: url(../../img/12.jpg) 0px 0px / cover no-repeat;
+    height: 470px;
+}
+
+.line {
+    padding: 1em 0;
+    background: #f5f5f5;
+}
+
+.line ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.line ul span {
+    padding: 0 1.5em;
+}
+
+.line a {
+    color: #ff9900;
+
+}
+
+.line a:hover {
+    color: #000;
+    text-decoration: none;
+}

@@ -1,0 +1,157 @@
+.login {
+    padding: 80px 0;
+}
+
+.login_wrap p {
+    color: #212121;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login_wrap a {
+    color: #ff9900;
+}
+
+.login form {
+    width: 45%;
+    margin: 3em auto 0;
+}
+
+.login_name,
+.login_password {
+    display: block;
+    outline: none;
+    font-size: 14px;
+    color: #212121;
+    padding: 10px;
+    border: 1px solid #dadada;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.login_password {
+    margin-top: 10px;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0 2em;
+}
+
+.checkbox label {
+    cursor: pointer;
+}
+
+.password a {
+    color: #ff9900;
+
+}
+
+.password a:hover,
+.login_wrap a:hover {
+    color: #212121;
+}
+
+.login_submit {
+    width: 100%;
+    background: #ff9900;
+    border: none;
+    color: #fff;
+    line-height: 42px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.7s;
+    cursor: pointer;
+}
+
+.login_submit:hover {
+    background-color: #212121;
+}
+
+.login_social {
+    text-align: center;
+    margin: 2em auto 0;
+    position: relative;
+    width: 45%;
+}
+
+.login_social:before {
+    content: '';
+    background: #ff9900;
+    height: 1px;
+    width: 19%;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+}
+
+.login_social h5 {
+    font-size: 1em;
+    color: #212121;
+    line-height: 1.5em;
+    padding: 2em 0 3em;
+}
+
+.login_social a {
+    color: #ff9900;
+}
+
+.login_social h5 a:hover {
+    color: #212121;
+}
+
+.face {
+    background: url(../../img/4.png) no-repeat 27px 11px #3b5998;
+    display: block;
+    margin-left: 3.5em;
+}
+
+.face:hover {
+    background-color: #5175C1;
+}
+
+.twitt {
+    background: url(../../img/5.png) no-repeat 27px 11px #55acee;
+    display: block;
+    margin-left: 2em;
+}
+
+.twitt:hover {
+    background-color: #509ed9;
+}
+
+a.face,
+a.twitt {
+    color: #fff;
+    font-size: 1em;
+    padding: .5em 1em;
+    width: 37%;
+    text-align: center;
+    transition: 0.5s all;
+}
+
+.login_social_links {
+    display: flex;
+}
+
+.back_home {
+    margin: 4em 0 0;
+    text-align: center;
+}
+
+.back_home a {
+    padding: 10px 35px;
+    color: #212121;
+    border: 1px solid #212121;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.back_home a:hover {
+    color: #fff;
+    background-color: #ff9900;
+    border: #ff9900;
+}
