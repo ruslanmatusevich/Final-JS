@@ -1,4 +1,3 @@
-
 @import 'sections/header.css';
 @import 'sections/advantages.css';
 @import 'sections/transport.css';
@@ -14,55 +13,72 @@
 @import 'sections/signup.css';
 @import 'sections/adaptations.css';
 
-* { font-family:  'Roboto', serif;
+* {
+    font-family: 'Roboto', serif;
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
-h1,h2,h3,h4,h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Open Sans', serif;
     font-weight: 700;
 }
+
 h1 {
     font-size: 40px;
 }
+
 h2 {
     font-size: 32px;
-   }
+}
+
 h3 {
     font-size: 20px;
-   }
+}
+
 h4 {
     font-size: 20px;
-    }
+}
+
 h5 {
     font-size: 20px;
 }
- html, body{
+
+html,
+body {
     font-size: 100%;
 }
+
 .container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
 }
+
 a {
     text-decoration: none;
     transition-timing-function: ease-in;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
-

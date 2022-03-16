@@ -1,4 +1,5 @@
-
+/* localStorage.setItem('ruslan', 'RUS9257700lan'); */
+/* console.log(localStorage.getItem('ruslan')); */
 window.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
@@ -119,3 +120,6 @@ window.addEventListener('DOMContentLoaded', function() {
             plusSlides(1);   
         });
 });
+
+
+

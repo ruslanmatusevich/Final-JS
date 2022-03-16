@@ -34,21 +34,26 @@
                     <ul>
                         <li class="tel">
                             <img src="icons/call.svg" alt="tel">
-                            <a href="tel:+71123456789" title="phone">(+71)123456789</a>
+                            <a href="tel:+375291113377" title="phone">(+375)291113377</a>
                         </li>
                         <li class="mail">
                             <img src="icons/email.svg" alt="mail">
-                            <a href="#" title="mail">name@domain.com</a>
+                            <a href="mailto:schummi.rus.lan@gmail.com&cc=mail@htmlacademy.ru?body=Привет, подпишитесь на рассылку" title="mail">rusroad@gmail.com</a>
                         </li>
                     </ul>
                 </div>
                 <div class="header_right">
                     <ul>
-                        <li class="tel">
-                            <a href="login.html">Войти</a>
+                        <li class="input">
+                            <a></a>
                         </li>
-                        <li class="mail">
-                            <a href="signup.html">Регистрация</a>
+                        <li class="hello">
+                            <span class="hello_text"></span>
+
+                        </li>
+                        <li class="out">
+                            <a></a>
+
                         </li>
                     </ul>
                 </div>
@@ -130,33 +135,35 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
                         <span class="navicon"></span>
                     </label>
                     <ul class="menu">
-                        <li>
-                            <a href="index.html">
-                                <span data-description="Главная">Главная</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="services.html">
-                                <span data-description="Сервис">Сервис</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="about.html">
-                                <span data-description="О нас">О нас</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="news.html">
-                                <span data-description="Новости">Новости</span>
-                            </a>
-                        </li>
-                        <li class="active">
-                            <a href="contacts.html">
-                                <span data-description="Контакты">Контакты</span>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </nav>
+            </div>
+        </section>
+        <section class="login">
+            <div class="container_login">
+                <div class="login_wrap">
+                    <h2 class="services_title">Войти</h2>
+                    <p class="services_subtitle">Пожалуйста, введите свои регистрационные
+                        данные для входа. 
+                </div>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="имя пользователя" class="login_name" required>
+                    <div class="login_alert"><span></span></div>
+                    <input type="password" name="password" placeholder="пароль" class="login_password" required>
+                    <div class="password_alert"><span></span></div>
+                    <input type="button" value="Войти" class="login_submit">
+                </form>
+                <!-- <div class="login_social">
+                    <h5>Войдите в систему с помощью <a href="#">Facebook</a> или <a href="#">Twitter</a></h5>
+                    <div class="login_social_links">
+                        <a href="#" class="face">Facebook</a>
+                        <a href="#" class="twitt">Twitter</a>
+                    </div>
+                </div> -->
+                <div class="back_home">
+                    <a href="index.html">Вернуться на главную</a>
+                </div>
             </div>
         </section>
         <div class="banner1"></div>
@@ -353,6 +360,10 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
             </a>
         </div>
     </footer>
+    <script src="js/input.js"></script>
+
+    <script src="js/menu.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
