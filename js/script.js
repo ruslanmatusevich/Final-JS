@@ -38,13 +38,18 @@ window.addEventListener('DOMContentLoaded', function() {
              });
 
              payment.addEventListener('change', function () {
-                if (weight.value == '') {
+                /* if (weight.value == '') {
                     totalSum.innerHTML = 0;
                 } else {
-                    /* let a = total; */
+                    
                     totalSum.innerHTML = ((total * this.options[this.selectedIndex].value) * totalDistance).toFixed();
-                }
-            });
+                } */
+                if (weight.value) {
+                    totalSum.innerHTML = ((total * this.options[this.selectedIndex].value) * totalDistance).toFixed();
+                } else {
+                    totalSum.innerHTML = 0;
+                    }
+                });
 
             //tabs
 

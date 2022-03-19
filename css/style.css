@@ -12,6 +12,7 @@
 @import 'sections/login.css';
 @import 'sections/signup.css';
 @import 'sections/adaptations.css';
+@import 'sections/basket.css';
 
 * {
     font-family: 'Roboto', serif;

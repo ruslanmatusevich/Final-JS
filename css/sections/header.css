@@ -29,7 +29,7 @@
     height: 58px;
 }
 
-.header ul li img {
+.header_left ul li img {
     margin-right: 8px;
     border: 1px solid #fff;
     padding: 7px;
@@ -70,6 +70,7 @@
     background-color: #212121;
     border-color: #212121;
     cursor: pointer;
+    transition: all 1s;
 }
 
 .logo {
@@ -294,3 +295,9 @@ svg:hover {
     color: #000;
     text-decoration: none;
 }
+.header_right ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .basket a */
