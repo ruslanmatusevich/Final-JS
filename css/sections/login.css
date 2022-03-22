@@ -56,12 +56,12 @@
     background-color: #212121;
 }
 
-.login_social {
+/* .login_social {
     text-align: center;
     margin: 2em auto 0;
     position: relative;
     width: 45%;
-}
+} */
 
 .login_social:before {
     content: '';
@@ -118,9 +118,9 @@ a.twitt {
     transition: 0.5s all;
 }
 
-.login_social_links {
+/* .login_social_links {
     display: flex;
-}
+} */
 
 .back_home {
     margin: 4em 0 0;

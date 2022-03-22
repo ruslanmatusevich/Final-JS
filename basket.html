@@ -139,11 +139,6 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
                     <input class="menu-btn" type="checkbox" id="menu-btn" />
                     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
                     <ul class="menu">
-                        <!-- <li><a href="index.html"><span data-description="Главная">Главная</span></a></li>
-                        <li><a href="services.html"><span data-description="Сервис">Сервис</span></a></li>
-                        <li><a href="about.html"><span data-description="О нас">О нас</span></a></li>
-                        <li><a href="news.html"><span data-description="Новости">Новости</span></a></li>
-                        <li><a href="contacts.html"><span data-description="Контакты">Контакты</span></a></li> -->
                     </ul>
                 </nav>
             </div>
@@ -161,34 +156,26 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
     </header>
     <main>
         <section class="login">
-            <div class="container">
+            <div class="container_login">
                 <div class="login_wrap">
-                    <h2 class="services_title">Регистрация</h2>
-                    <p class="services_subtitle">Пожалуйста, введите свои регистрационные данные. Или войдите в <a
-                            href="login.html">учетную запись</a>.
-                    </p>
+                    <h2 class="services_title">Войти</h2>
+                    <p class="services_subtitle">Пожалуйста, введите свои регистрационные
+                        данные для входа. 
                 </div>
                 <form action="#" method="POST">
                     <input type="text" name="name" placeholder="имя пользователя" class="login_name" required>
-                    <input type="email" name="email" placeholder="электронный адрес" class="login_email" required>
+                    <div class="login_alert"><span></span></div>
                     <input type="password" name="password" placeholder="пароль" class="login_password" required>
-                    <div class="remember">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                Я принимаю условия
-                            </label>
-                        </div>
-                    </div>
-                    <input type="submit" value="Войти" class="login_submit">
+                    <div class="password_alert"><span></span></div>
+                    <input type="button" value="Войти" class="login_submit">
                 </form>
-                <div class="login_social">
+                <!-- <div class="login_social">
                     <h5>Войдите в систему с помощью <a href="#">Facebook</a> или <a href="#">Twitter</a></h5>
                     <div class="login_social_links">
                         <a href="#" class="face">Facebook</a>
                         <a href="#" class="twitt">Twitter</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="back_home">
                     <a href="index.html">Вернуться на главную</a>
                 </div>
@@ -196,55 +183,12 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
         </section>
         <section class="basket">
             <h2>Выбранные маршруты</h2>
-            <div class="container">
-                <!-- <div class="route">
-                    <span>
-                        маршрут
-                    </span>
-                    <span>
-                        название
-                    </span>
+            <div class="wrapDiv">
+                <div class="container">
+                    
                 </div>
-                <div class="distance">
-                    <span>
-                        расстояние
-                    </span>
-                    <span>
-                        км
-                    </span>
-                </div>
-                <div class="weight">
-                    <span>
-                        вес
-                    </span>
-                    <span>
-                        тонн
-                    </span>
-                </div>
-                <div class="pay">
-                    <span>
-                        тип оплаты
-                    </span>
-                    <span>
-                        наличные
-                    </span>
-                </div>
-                <div class="money">
-                    <span>
-                        итого
-                    </span>
-                    <span>
-                        руб
-                    </span>
-                </div>
-                <div class="delete">
-                    <span> действие
-                    </span>
-                    <span>
-                        удалить
-                    </span>
-                </div> -->
             </div>
+            
         </section>
     </main>
     <footer>

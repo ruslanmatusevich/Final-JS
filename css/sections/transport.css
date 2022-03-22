@@ -110,6 +110,7 @@
   border: 3px solid transparent;
   outline: 0;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .counter_wrapper_block {
@@ -149,4 +150,17 @@
 
   appearance: none;
   margin: 0;
+}
+
+.counter button {
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 230px;
+  height: 35px;
+  padding-left: 10px;
+  background-color: #c78030;
+  color: #fff;
+  border: 3px solid transparent;
+  outline: 0;
+  border-radius: 8px;
 }

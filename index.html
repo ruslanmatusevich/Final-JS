@@ -357,7 +357,7 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
                     <div class="counter_block">
                         <div class="counter_block_option">Откуда</div>
                         <select name="place" id="from">
-                            <option  value="0">Выберите</option>
+                            <option  value="-1">Выберите</option>
                             <option  value="0">Гомель</option>
                             <option  value="550">Брест</option>
                             <option  value="300">Минск</option>
@@ -366,7 +366,7 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
                     <div class="counter_block">
                         <div class="counter_block_option">Куда</div>
                         <select name="place" id="where">
-                            <option  value="0">Выберите</option>
+                            <option value="-1">Выберите</option>
                             <option  value="0">Гомель</option>
                             <option  value="550">Брест</option>
                             <option  value="300">Минск</option>
@@ -379,10 +379,10 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
                     <div class="counter_block">
                         <div class="counter_block_option">Тип оплаты</div>
                         <select name="place" id="payment" >
-                            <option id="cart" value="0">Выберите</option>
-                            <option id="cart" value="1">Расчет на карту</option>
-                            <option id="cash" value="0.9">Наличный расчет</option>
-                            <option id="cashless" value="1.2">Безналичный расчет</option>
+                            <option  value="0">Выберите</option>
+                            <option  value="1">Расчет на карту</option>
+                            <option  value="0.9">Наличный расчет</option>
+                            <option  value="1.2">Безналичный расчет</option>
                         </select>
                     </div>
                 </div>
@@ -396,7 +396,9 @@ m58 -82 l20 -53 -45 0 c-41 0 -44 1 -37 23 12 41 34 90 38 86 2 -2 13 -28 24
                         <span id="total">0</span>
                     </div>
                 </div>
-                <button id="" type="submit">В корзину</button>
+                <button id="in_basket" type="submit">Сохранить расчет</button>
+                <button id="calc" type="button">Расчитать</button>
+
             </div>
         </section>
         <section class="news">

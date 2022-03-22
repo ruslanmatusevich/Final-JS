@@ -2,27 +2,49 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
 .basket span {
     font-size: 20px;
-    color: #fff;
-   
+    color: #777;
+
 }
+
 /* .basket span:first-child {
     font-size: 20px;
     color: #fff;
 } */
 .basket .container {
-    padding: 50px;
-    display: flex;
-    
-    justify-content: space-between;
+    padding: 37px;
+    display: grid;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
     border: 1px solid #fff;
     margin: 40px auto;
     background-color: #ff9900;
     border-radius: 20px;
+    grid-gap: 10px;
 }
-.route , .distance, .weight, .pay, .money, .delete {
+
+.basket .container>div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 5px 0;
+    justify-items: center;
+    /*  border: 1px solid #fff; */
+    gap: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.route,
+.distance,
+.weight,
+.pay,
+.money,
+.delete {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     color: #fff;
 }

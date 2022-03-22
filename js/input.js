@@ -19,28 +19,48 @@ let input = document.querySelector('.input > a'),
     
     // открыли окно
 
-    window.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener ('DOMContentLoaded', function() {
         showName();
            });
     //вход   
       function showName() {
+        /* console.log(localStorage.getItem(key)); */
 
-        if ( localStorage.key(0)) {
-            let key = localStorage.key(0);
-            hello.style.display = 'flex';
-            helloText.innerHTML = `Привет ${key}`;
-            out.style.display = 'flex';
-            outText.innerHTML = 'Выйти';
-            input2.style.display = 'none';
+        
+            
 
-        } else {
-            input2.style.display = 'flex';
-            input.innerHTML = "Войти";
-        }
-    }
+            if ((localStorage.length == 0))  {
+                input2.style.display = 'flex';
+                input.innerHTML = "Войти";
+                /* console.log(input.innerHTML) */
+                
+            } else {
+
+                for (let i = 0; i < localStorage.length; i++) {
+                    let key = localStorage.key(i);
+
+                if (localStorage.getItem(key).startsWith("{")) continue;
+                /* console.log(key);
+                console.log(localStorage.getItem(key)); */
+
+                hello.style.display = 'flex';
+                helloText.innerHTML = `Привет ${key}`;
+                out.style.display = 'flex';
+                outText.innerHTML = 'Выйти';
+                input2.style.display = 'none';
+            }
+        
+        
+
+
+       /*  if ( localStorage.key(localStorage.length - 1)) { 
+            let key = localStorage.key(localStorage.length - 1); */
+}
+      }
     input2.addEventListener('click', function() {
         document.querySelector('.login').style.display = 'block';
     });
+
 
 //выход
     out.addEventListener('click', function() {
