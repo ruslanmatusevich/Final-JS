@@ -1,0 +1,28 @@
+.header_right ul .hello {
+    display: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.header_right ul .out {
+    display: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header_right a {
+    border: 1px solid #fff;
+    padding: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_right a:hover {
+    background-color: #212121;
+    border-color: #212121;
+    cursor: pointer;
+    transition: all 1s;
+}

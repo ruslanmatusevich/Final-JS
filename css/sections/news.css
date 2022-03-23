@@ -118,16 +118,16 @@
 
 
 .arrow_right {
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
     background: url(../../icons/right-arrow.svg) center / cover no-repeat;
     /* background-size: cover; */
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%);
     opacity: .4;
-    transition: 1s;
+    transition: 1s; */
 }
 
 .news_list a {

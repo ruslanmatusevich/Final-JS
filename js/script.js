@@ -99,6 +99,8 @@ window.addEventListener('DOMContentLoaded', function() {
             let tab = document.querySelectorAll('.info_header_tab'),
                 info = document.querySelector('.info_header'),
                 tabContent = document.querySelectorAll('.info_tabcontent');
+
+                
                 
                 function hideTabContent(currentTab) {
                     for ( let i = currentTab; i < tabContent.length; i++) {
@@ -127,6 +129,7 @@ window.addEventListener('DOMContentLoaded', function() {
                              if (target == tab[i]) {
                                 hideTabContent(0);
                                 showTabContent(i);
+                                
                                 break;
                              }
                         }

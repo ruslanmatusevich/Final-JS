@@ -1,0 +1,36 @@
+.header {
+    height: 58px;
+    background-color: #ff9900;
+    /* position: relative; */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header ul {
+    border-left: 1px solid #fff;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+    padding: 15px;
+    height: 58px;
+}
+
+.header a {
+    color: #fff;
+    font-size: 18px;
+    transition: all 1.2s;
+}

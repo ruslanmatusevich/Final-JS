@@ -1,0 +1,136 @@
+.transport {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+/* .foto {
+    width: 100%;
+} */
+
+.foto img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.transport .counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    opacity: 0.95;
+    background: url(../../img/main_bg.jpg);
+
+}
+
+.counter_wrapper_block {
+    display: flex;
+    flex-direction: column;
+}
+
+.transport .counter_title {
+    font-size: 32px;
+    color: #c78030;
+}
+
+.transport .counter_title:after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 1px;
+    background-color: #c78030;
+    margin-top: 4px;
+}
+
+.transport .counter_block {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* display: block; */
+    margin-bottom: 50px;
+}
+
+.transport .counter_block_option {
+    font-size: 22px;
+    color: #c78030;
+    /* width: 50%; */
+}
+
+.transport .counter_block_input {
+    display: block;
+    width: 120px;
+    height: 60px;
+    padding: 10px;
+    color: #c78030;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #c78030;
+    font-size: 46px;
+    text-align: center;
+    outline: 0;
+}
+
+.transport .counter_block select {
+    width: 230px;
+    height: 35px;
+    padding-left: 10px;
+    background-color: #c78030;
+    color: #fff;
+    border: 3px solid transparent;
+    outline: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.counter_wrapper_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transport .counter_block select option {
+    background-color: #fff;
+    color: #212121;
+}
+
+.transport .counter_wrapper_total {
+    padding-bottom: 50px;
+    text-align: right;
+    font-size: 38px;
+    color: #c78030;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-end: auto;
+    align-items: end;
+}
+
+.transport .counter_total span {
+    font-size: 46px;
+}
+
+
+
+/* убрать стрелочки в input */
+.counter input[type=number]::-webkit-inner-spin-button,
+.counter input[type=number]::-webkit-outer-spin-button {
+
+    appearance: none;
+    margin: 0;
+}
+
+.counter button {
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 230px;
+    height: 35px;
+    padding-left: 10px;
+    background-color: #c78030;
+    color: #fff;
+    border: 3px solid transparent;
+    outline: 0;
+    border-radius: 8px;
+}

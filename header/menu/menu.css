@@ -1,0 +1,123 @@
+.logo {
+    display: block;
+    height: 100px;
+    transition: all 1s;
+}
+
+.logo a img {
+    position: relative;
+    height: 100px;
+    transform: scale(1.7);
+    z-index: -1;
+    top: 6px;
+    left: 40px;
+}
+
+/* .logo_nav .logo:hover {
+    transform: scale(1.05);
+} */
+
+a:hover,
+svg:hover {
+    transition: all 1s;
+    /* fill: #ff9900; */
+}
+
+
+.logo_nav .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    margin: auto 0;
+}
+
+.navbar ul {
+    display: flex;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li.active span {
+    color: #ff9900;
+}
+
+.navbar ul>li>a {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.navbar a span {
+    color: #777;
+    position: relative;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+.navbar a span::before {
+    color: #ff9900;
+    position: absolute;
+    top: 100%;
+    content: attr(data-description);
+}
+
+.navbar a:hover span {
+    color: #ff9900;
+    transform: translateY(-100%);
+}
+
+.logo_nav {
+    position: relative;
+}
+
+.navbar .menu-icon {
+    cursor: pointer;
+    padding: 20px 20px;
+    position: absolute;
+    right: 53px;
+    top: 4px;
+    position: fixed;
+    top: 120px;
+    z-index: 3;
+}
+
+.navbar .menu-icon .navicon {
+    background: #5ce8ed;
+    display: block;
+    height: 2px;
+    position: fixed;
+    right: 55px;
+    transition: .2s ease-out;
+    width: 35px;
+    z-index: 3;
+}
+
+.navbar .menu-icon .navicon:before,
+.navbar .menu-icon .navicon:after {
+    background: #5ce8ed;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.navbar .menu-icon .navicon:before {
+    top: 8px;
+}
+
+.navbar .menu-icon .navicon:after {
+    top: -8px;
+}
+
+.navbar .menu-btn {
+    display: none;
+}
+
+.navbar .menu-icon {
+    display: none;
+}
