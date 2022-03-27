@@ -73,10 +73,12 @@
                     </a>
                 </div>
                 <nav class="navbar">
-                    <input class="menu-btn" type="checkbox" id="menu-btn">
-                    <label class="menu-icon" for="menu-btn">
+                    <!-- <input class="menu-btn" type="checkbox" id="menu-btn"> -->
+                    <!-- <label class="menu-icon" for="menu-btn"> -->
+                    <div class="burger_menu" >
+
                         <span class="navicon"></span>
-                    </label>
+                    </div>
                     <ul class="menu">
                        
                     </ul>
@@ -137,7 +139,7 @@
                             <div class="description_text">Авторефрижератор – это коммерческая техника, оснащённая специальным климатическим оборудованием, кузов которой представляет собой камеру из теплоизолированных материалов. Эти машины могут поддерживать температуру в диапазоне от +12 до -20 градусов, в зависимости от модели. Кроме того, есть установки способные понизить температуру в кузове до -38С. Для возможности транспортировки сборных грузов используют кузова, состоящие из нескольких секций с разным температурным режимом.
                             </div>
                             <div class="description_btn">
-                                Узнать подробнее
+                                <a href="#">подробнее</a>
                             </div>
                         </div>
                         <div class="photo">
@@ -292,6 +294,8 @@
                             <option  value="1.2">Безналичный расчет</option>
                         </select>
                     </div>
+                    <button id="in_basket" type="submit">Сохранить расчет</button>
+
                 </div>
                 <div class="counter_wrapper_total">
                     <div class="counter_total_length">
@@ -302,9 +306,12 @@
                         Стоимость<br>
                         <span id="total">0</span>
                     </div>
+                    <button id="calc" type="button">Расчитать</button>
+
                 </div>
-                <button id="in_basket" type="submit">Сохранить расчет</button>
-                <button id="calc" type="button">Расчитать</button>
+                <!-- <div class="counter_button"> -->
+                <!-- </div> -->
+                
 
             </div>
         </section>
@@ -327,15 +334,18 @@
                         </div>
                         <div class="news_descr">
                             <img src="main/news/img/6.jpg" alt="img">
-                            <h4 class="title">
-                                <a href="news.html">Международная выставка грузовиков в США, Луизвилль</a>
-                            </h4>
-                            <p>Одна из крупнейших в мире выставок, посвященная грузовым автомобилям, Mid-America
-                                Trucking Show или коротко MATS 2021 пройдет с 16 по 18 сентября в Луизвилле, США, и
-                                даст посетителям возможность посмотреть и протестировать новые продукты и услуги.
-                            </p>
+                            
+                                <h4 class="title">
+                                    <a href="news.html">Международная выставка грузовиков в США, Луизвилль</a>
+                                </h4>
+                                <p>Одна из крупнейших в мире выставок, посвященная грузовым автомобилям, Mid-America
+                                    Trucking Show или коротко MATS 2021 пройдет с 16 по 18 сентября в Луизвилле, США, и
+                                    даст посетителям возможность посмотреть и протестировать новые продукты и услуги.
+                                </p>
+                        
+                            
                         </div>
-                        <div class="clearfix"></div>
+                        <!-- <div class="clearfix"></div> -->
                     </div>
                     <div class="slider_item">
                         <div class="news_item">
@@ -575,7 +585,7 @@
         </div>
     </footer>
     <script src="js/input.js"></script>
-
+    <script src="js/burger.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
 </body>

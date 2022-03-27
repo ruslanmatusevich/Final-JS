@@ -15,7 +15,7 @@ for (let i = 0; i < elements.length; i++) {
     childLink.setAttribute('href', pageName[i]);
     childLink.classList.add('menu_link');
 
-     childSpan = document.createElement('span');
+    childSpan = document.createElement('span');
     childSpan.setAttribute('data-description', el);
     childSpan.innerHTML = el;
     childLink.appendChild(childSpan);

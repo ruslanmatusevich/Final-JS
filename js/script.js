@@ -151,9 +151,18 @@ window.addEventListener('DOMContentLoaded', function() {
             if (num < 1) {
                 slideIndex = slides.length;
             }
+            
             slides.forEach((item) => item.style.display = 'none');
+            /* if (document.documentElement.clientWidth < 768) {
+                slides[slideIndex - 1].style.display = 'flex';
 
-            slides[slideIndex - 1].style.display = 'grid';
+
+            } else {
+                slides[slideIndex - 1].style.display = 'grid';
+
+            } */
+            slides[slideIndex - 1].style.display = 'flex';
+
         }    
 
         function anotherSlides(num) {

@@ -73,7 +73,7 @@ svg:hover {
     position: relative;
 }
 
-.navbar .menu-icon {
+.navbar .burger_menu {
     cursor: pointer;
     padding: 20px 20px;
     position: absolute;
@@ -82,9 +82,17 @@ svg:hover {
     position: fixed;
     top: 120px;
     z-index: 3;
+    /* background-color: #999; */
+    border-radius: 30%;
+    transition: all 1s;
 }
 
-.navbar .menu-icon .navicon {
+.burger_menu:hover {
+    background: #ff9900;
+
+}
+
+.navicon {
     background: #5ce8ed;
     display: block;
     height: 2px;
@@ -95,8 +103,8 @@ svg:hover {
     z-index: 3;
 }
 
-.navbar .menu-icon .navicon:before,
-.navbar .menu-icon .navicon:after {
+.burger_menu .navicon:before,
+.burger_menu .navicon:after {
     background: #5ce8ed;
     content: '';
     display: block;
@@ -106,18 +114,18 @@ svg:hover {
     width: 100%;
 }
 
-.navbar .menu-icon .navicon:before {
+.burger_menu .navicon:before {
     top: 8px;
 }
 
-.navbar .menu-icon .navicon:after {
+.burger_menu .navicon:after {
     top: -8px;
 }
 
-.navbar .menu-btn {
+/* .navbar .menu-btn {
     display: none;
-}
+} */
 
-.navbar .menu-icon {
+/* .navbar .burger_menu {
     display: none;
-}
+} */

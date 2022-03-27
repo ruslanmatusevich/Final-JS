@@ -94,18 +94,19 @@
 }
 
 .transport .counter_wrapper_total {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
     text-align: right;
     font-size: 38px;
     color: #c78030;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-between;
+    margin-top: 170px;
 
-    display: grid;
+    /* display: grid;
     grid-template-rows: 1fr 1fr;
     grid-row-end: auto;
-    align-items: end;
+    align-items: end; */
 }
 
 .transport .counter_total span {
@@ -122,6 +123,13 @@
     margin: 0;
 }
 
+#calc {}
+
+/* .counter_button {
+    display: flex;
+    justify-content: space-between;
+} */
+
 .counter button {
     cursor: pointer;
     text-transform: uppercase;
@@ -133,4 +141,12 @@
     border: 3px solid transparent;
     outline: 0;
     border-radius: 8px;
+    font-size: 15px;
+    align-self: flex-end;
+}
+
+#in_basket {
+    justify-content: end;
+
+
 }

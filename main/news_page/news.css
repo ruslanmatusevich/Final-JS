@@ -1,6 +1,6 @@
 /* page news.html */
 .news_company {
-    padding: 80px 0 60px;
+    padding: 70px 0;
 }
 
 .news_company .container {
@@ -246,7 +246,7 @@ article p {
 
 .news_button {
     width: 50%;
-    margin: 20px 15px;
+    margin: 20px 15px 0;
     padding-right: 30px;
 }
 

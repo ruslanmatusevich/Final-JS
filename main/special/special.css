@@ -158,8 +158,8 @@
     padding-right: 20px;
 }
 
-.info_tabcontent .description_btn {
-    width: 180px;
+/* .info_tabcontent .description_btn a { */
+/* width: 180px;
     height: 45px;
     line-height: 43px;
     margin-top: 30px;
@@ -170,12 +170,82 @@
     font-weight: bold;
     text-align: center;
     font-weight: 300;
-    cursor: pointer;
+    cursor: pointer; */
+/*  text-transform: uppercase;
+    outline: 1px solid #fff;
+    padding: 8px 40px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    display: inline-block;
+    transition: all 0.5s;
+} */
+
+/* .info_tabcontent .description_btn .info_tabcontent .description_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF9900;
+    z-index: -1;
+    transform: rotate(-45deg) translateY(-3em);
+    transform-origin: 0% 100%;
+    transition: all 0.5s;
+} */
+.description_btn {
+    margin-top: 20px;
 }
 
-.info_tabcontent .description_btn:hover {
-    box-shadow: 0px 0px 5px #ff9900;
+.description_btn a {
+    text-transform: uppercase;
+    outline: 1px solid #fff;
+    padding: 8px 40px;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 22px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    display: inline-block;
+    transition: all 0.5s;
 }
+
+.description_btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF9900;
+    z-index: -1;
+    transform: rotate(-45deg) translateY(-3em);
+    transform-origin: 0% 100%;
+    transition: all 0.5s;
+}
+
+.description_btn a:hover {
+    outline-color: #FF9900;
+}
+
+.description_btn a:hover::before {
+    opacity: 1;
+    transform: rotate(0deg);
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+/* .info_tabcontent .description_btn:hover {
+    box-shadow: 0px 0px 5px #ff9900;
+} */
 
 .info_tabcontent .photo {
     /* display: -webkit-box;

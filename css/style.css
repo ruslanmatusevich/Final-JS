@@ -3,7 +3,6 @@
 @import '../header/login/login.css';
 @import '../header/login/login.css';
 @import '../header/banner/banner_serv.css';
-
 @import '../header/tel/tel.css';
 @import '../header/input/input.css';
 @import '../header/menu/menu.css';
@@ -16,9 +15,8 @@
 @import '../main/service/work/work.css';
 @import '../main/about/about.css';
 @import '../main/news_page/news.css';
-
-
-
+@import '../main/contacts/contacts.css';
+@import '../main/basket/basket.css';
 @import '../footer/footer.css';
 
 
@@ -30,17 +28,17 @@
 /* @import 'sections/advantages.css'; */
 /* @import 'sections/transport.css'; */
 /* @import 'sections/news.css'; */
-@import 'sections/feedback.css';
+/* @import 'sections/feedback.css'; */
 /* @import 'sections/footer.css'; */
 /* @import 'sections/services.css'; */
 /* @import 'sections/work.css'; */
 /* @import 'sections/special.css'; */
 /* @import 'sections/about.css'; */
-@import 'sections/contacts.css';
-@import 'sections/login.css';
-@import 'sections/signup.css';
+/* @import 'sections/contacts.css'; */
+/* @import 'sections/login.css'; */
+/* @import 'sections/signup.css'; */
 @import 'sections/adaptations.css';
-@import 'sections/basket.css';
+/* @import 'sections/basket.css'; */
 
 * {
     font-family: 'Roboto', serif;
@@ -74,17 +72,19 @@ h2 {
     font-size: 32px;
 }
 
-h3 {
+h3,
+h4,
+h5 {
     font-size: 20px;
 }
 
-h4 {
+/* h4 {
     font-size: 20px;
 }
 
 h5 {
     font-size: 20px;
-}
+} */
 
 html,
 body {
