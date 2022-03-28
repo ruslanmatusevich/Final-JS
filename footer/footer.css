@@ -219,6 +219,10 @@ ul.social li {
 }
 
 @media screen and (max-width: 1199px) {
+    .instagram {
+        padding: 0 30px;
+    }
+
     .instagram_foto {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
@@ -233,9 +237,7 @@ ul.social li {
         padding: 0 15px 0 30px;
     }
 
-    .instagram {
-        padding: 0 30px;
-    }
+
 
     .footer_buttom .container {
         justify-content: space-around;
@@ -255,10 +257,6 @@ ul.social li {
         grid-template-columns: 2.7fr 1.5fr 4fr 2fr;
     }
 
-    footer .links {
-        padding: 0 10px;
-    }
-
     .footer_wrap h3 {
         font-size: 23px;
     }
@@ -267,16 +265,20 @@ ul.social li {
         padding: 0 15px;
     }
 
-    footer .twitter {
-        padding: 0 15px;
+    .footer_buttom {
+        padding: 1em 0;
     }
 
     .instagram {
         padding: 0 15px;
     }
 
-    .footer_buttom {
-        padding: 1em 0;
+    footer .twitter {
+        padding: 0 15px;
+    }
+
+    footer .links {
+        padding: 0 10px;
     }
 }
 

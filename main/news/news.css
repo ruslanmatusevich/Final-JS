@@ -1,7 +1,6 @@
 .news {
     padding: 70px 0 50px;
-    /* background: url(img/main_bg.jpg);
-    z-index: -1; */
+
 
 }
 
@@ -83,7 +82,7 @@
     cursor: pointer;
     top: 0;
     width: 90px;
-    /* background-color: rgba(0, 0, 0, 0.4); */
+
     transition: 0.3s;
     height: 100%;
     right: 0;
@@ -100,7 +99,6 @@
     width: 50px;
     height: 50px;
     background: url(../../icons/left-arrow.svg) center / cover no-repeat;
-    /*  background-size: cover; */
     position: absolute;
     top: 50%;
     left: 50%;

@@ -1,14 +1,15 @@
 /* @import 'sections/header.css'; */
-@import '../header/header.css';
-@import '../header/login/login.css';
-@import '../header/login/login.css';
-@import '../header/banner/banner_serv.css';
-@import '../header/tel/tel.css';
-@import '../header/input/input.css';
-@import '../header/menu/menu.css';
-@import '../header/banner/banner.css';
-@import '../main/special/special.css';
-@import '../main/advantages/advantages.css';
+
+/* @import '../header/header.css'; */
+/* @import '../header/login/login.css'; */
+/* @import '../header/login/login.css'; */
+/* @import '../header/banner/banner_serv.css'; */
+/* @import '../header/tel/tel.css'; */
+/* @import '../header/input/input.css'; */
+/* @import '../header/menu/menu.css'; */
+/* @import '../header/banner/banner.css'; */
+/* @import '../main/special/special.css'; */
+/* @import '../main/advantages/advantages.css'; */
 @import '../main/transport/transport.css';
 @import '../main/news/news.css';
 @import '../main/service/service/service.css';

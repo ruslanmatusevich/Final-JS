@@ -3,7 +3,8 @@ $var2: #FF9900;
 
 .banner {
 	height: 700px;
-	background: url(img/banner_big.jpg) center center / cover no-repeat;
+	background: url(../header/banner/img/banner_big.jpg) center (center / cover) no-repeat;
+
 	.container {
 		height: 700px;
 		display: flex;
@@ -11,18 +12,22 @@ $var2: #FF9900;
 		justify-content: center;
 		align-items: flex-end;
 	}
+
 	&_info {
 		width: 400px;
 		text-align: right;
+
 		h1 {
 			color: $var1;
 			font-size: 45px;
 		}
+
 		p {
 			color: $var1;
 			margin-bottom: 30px;
 			font-size: 20px;
 		}
+
 		a {
 			text-transform: uppercase;
 			outline: 1px solid $var1;
@@ -36,6 +41,7 @@ $var2: #FF9900;
 			transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 			display: inline-block;
 			transition: all 0.5s;
+
 			&::before {
 				content: '';
 				position: absolute;
@@ -50,8 +56,10 @@ $var2: #FF9900;
 				transform-origin: 0% 100%;
 				transition: all 0.5s;
 			}
+
 			&:hover {
 				outline-color: $var2;
+
 				&::before {
 					opacity: 1;
 					transform: rotate(0deg);

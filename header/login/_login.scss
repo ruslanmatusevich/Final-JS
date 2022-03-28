@@ -1,16 +1,22 @@
+$var1: #212121;
+$var2: #ff9900;
+$var3: #ffffff;
+$var4: #00b0ff;
+$var5: #CC0000;
+$var6: #dadada;
+$var7: #f5f5f5;
+
 .login_wrap {
-	p {
-		color: #212121;
-		text-align: center;
-		margin-top: 20px;
-	}
-	a {
-		color: #ff9900;
-		&:hover {
-			color: #212121;
-		}
-	}
+	color: $var1;
+	text-align: center;
+	margin-top: 20px;
 }
+
+a {
+	color: $var2;
+	color: $var1;
+}
+
 .login {
 	display: none;
 	position: fixed;
@@ -18,79 +24,79 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
-	form {
-		width: 45%;
-		margin: 3em auto 0;
-		width: 65%;
+	width: 45%;
+	margin: 3em auto 0;
+	width: 65%;
+
+	&_submit {
+		width: 100%;
+		background: $var2;
+		border: none;
+		color: $var3;
+		line-height: 42px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		transition: all 0.7s;
+		cursor: pointer;
+		background-color: $var1;
+	}
+
+	&_name,
+	&_password {
+		display: block;
+		outline: none;
+		font-size: 14px;
+		color: $var1;
+		padding: 10px;
+		border: 1px solid $var6;
+		width: 100%;
+		background: $var7;
+	}
+
+	&_password {
+		margin-top: 10px;
 	}
 }
-.login_submit {
-	width: 100%;
-	background: #ff9900;
-	border: none;
-	color: #fff;
-	line-height: 42px;
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	transition: all 0.7s;
-	cursor: pointer;
-	&:hover {
-		background-color: #212121;
-	}
-}
+
 .back_home {
 	margin: 4em 0 0;
 	text-align: center;
-	a {
-		padding: 10px 35px;
-		color: #212121;
-		border: 1px solid #212121;
-		text-decoration: none;
-		font-size: 14px;
-		text-transform: uppercase;
-		&:hover {
-			color: #fff;
-			background-color: #ff9900;
-			border: #ff9900;
-		}
-	}
+	padding: 10px 35px;
+	color: $var1;
+	border: 1px solid $var1;
+	text-decoration: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: $var3;
+	background-color: $var2;
+	border: $var2;
 }
+
 .container_login {
-	background-color: #00b0ff;
+	background-color: $var4;
 	opacity: 0.9;
 	height: 500px;
 	border-radius: 15px;
 	padding: 30px;
 }
+
 .login_alert,
 .password_alert {
-	color: #CC0000;
+	color: $var5;
 	font-size: 20px;
 	height: 20px;
 	margin-bottom: 20px;
 }
-.login_name,
-.login_password {
-	display: block;
-	outline: none;
-	font-size: 14px;
-	color: #212121;
-	padding: 10px;
-	border: 1px solid #dadada;
-	width: 100%;
-	background: #f5f5f5;
-}
-.login_password {
-	margin-top: 10px;
-}
+
 @media screen and (max-width: 991px) {
-    .container_login {
-        padding: 0;
-    }
-    .login {
-        form {
-            width: 65%;
-        }
-    }
-    
+	.container_login {
+		padding: 0;
+	}
+
+	.login {
+		form {
+			width: 65%;
+		}
+	}
+
 }
