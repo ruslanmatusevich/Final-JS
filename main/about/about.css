@@ -164,3 +164,169 @@
 .about_buttom_strip5:after {
     width: 80%;
 }
+
+@media screen and (max-width: 1200px) {
+    .about {
+        padding: 50px 0;
+    }
+
+    .about_descr_items {
+        margin-top: 60px;
+    }
+
+    .about_descr_item_right p {
+        padding-top: 50px;
+    }
+
+    .stat .counter {
+        font-size: 1.5em;
+    }
+
+    .stat_title {
+        font-size: 17px;
+    }
+
+    .about_buttom_left,
+    .about_buttom_right {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .about_descr_item_left img:nth-child(2) {
+        display: none;
+    }
+
+    .about_descr_item_left img {
+        object-fit: cover;
+    }
+
+    .about_descr_item_left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stat_wrap {
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, auto);
+        gap: 10px;
+        padding: 30px;
+    }
+
+    .about_descr_item_right {
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        padding: 30px 0;
+    }
+
+    .about_descr_items {
+        margin-top: 40px;
+        gap: 0;
+    }
+
+    .about_descr_item_left img {
+        object-fit: cover;
+    }
+
+    .about_descr_item_right h3 {
+        font-size: 26px;
+    }
+
+    .stat .counter {
+        font-size: 22px;
+    }
+
+    .stat_title {
+        font-size: 15px;
+    }
+
+    .about_buttom {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+
+    .services_title {
+        font-size: 18px;
+    }
+
+    .about_descr_item_left img:first-child {
+        display: none;
+    }
+
+    .about_descr_items {
+        display: block;
+    }
+
+    .about_descr_item_left img {
+        height: 180px;
+    }
+
+    .about_descr_item_left img {
+        object-fit: cover;
+        height: 180px;
+    }
+
+    .about_descr_item_right h3 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .about_descr_item_right p {
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .stat {
+        margin-top: 0;
+    }
+
+    .about_descr_item_right .more {
+        padding-left: 10px;
+    }
+
+    .stat_item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .stat .counter {
+        font-size: 20px;
+    }
+
+    .stat_title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .about_buttom_right {
+        display: none;
+    }
+
+    .about_buttom_left h3 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .about_descr_item_right h3 {
+        margin: 10px;
+    }
+
+    .about_buttom {
+        padding-top: 20px;
+    }
+
+    .about_buttom_left {
+        width: 100%;
+    }
+
+    .about_buttom .container {
+        display: block;
+    }
+}

@@ -269,3 +269,153 @@ article p {
 .news_button input:hover {
     background: #212121;
 }
+
+@media screen and (max-width: 1199px) {
+    .comments_wrap {
+        padding: 0 100px;
+    }
+
+    .news_comments h4 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    article h3 {
+        line-height: 28px;
+    }
+
+    .recent_posts_item_img {
+        width: 100%;
+    }
+
+    .recent_posts_item {
+        display: block;
+    }
+
+    .recent_posts_item_info {
+        width: 100%;
+    }
+
+    .recent_posts_item_img img {
+        object-fit: cover;
+    }
+
+    .recent_posts h3,
+    .twitter_posts h3 {
+        line-height: 28px;
+    }
+
+    .news_list li {
+        justify-content: space-between;
+    }
+
+    .twitter_posts {
+        display: none;
+    }
+
+    .news_company {
+        padding: 50px 0 60px;
+    }
+
+    article p {
+        margin: 0;
+        line-height: 27px;
+    }
+
+    .news_comments h4 {
+        font-size: 22px;
+    }
+
+    .news_comments_item {
+        grid-template: 0.5fr 1fr 1fr/ 0.5fr 1fr;
+    }
+
+    .comments_wrap {
+        padding: 0 70px;
+    }
+
+    .form_top_left input,
+    .form_top_right input {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .news_list ul {
+        display: none;
+    }
+
+    aside {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .news_company .container {
+        display: block;
+    }
+
+    .news_right {
+        width: 100%;
+    }
+
+    .news_comments_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user_wrap {
+        text-align: center;
+    }
+
+    .comments_data {
+        justify-content: center;
+    }
+
+    .comments_wrap {
+        padding: 0 10px;
+    }
+
+    .news_comments h4 {
+        margin: 0;
+    }
+
+    .comments_wrap .form_top_left,
+    .form_textarea {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .form_top {
+        flex-direction: column;
+    }
+
+    .comments_wrap .form_top_left,
+    .comments_wrap .form_top_right {
+        width: 100%;
+    }
+
+    .news_button {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .news_button input {
+        width: 100%;
+    }
+
+    .news_company {
+        padding: 50px 0 30px;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-size: 15px;
+    }
+}

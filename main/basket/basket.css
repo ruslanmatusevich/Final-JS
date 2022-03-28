@@ -13,16 +13,9 @@
 
 }
 
-/* .basket span:first-child {
-    font-size: 20px;
-    color: #fff;
-} */
 .basket .container {
     padding: 37px;
     display: grid;
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: space-between; */
     border: 1px solid #fff;
     margin: 40px auto;
     background-color: #ff9900;
@@ -51,4 +44,24 @@
     display: flex;
     flex-direction: column;
     color: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+    .basket {
+        padding: 40px;
+    }
+
+    .basket .container>div {
+        align-items: center;
+    }
+
+    .basket .container>div>div>span {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .basket span {
+        font-size: 16px;
+    }
 }

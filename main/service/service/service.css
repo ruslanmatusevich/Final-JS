@@ -79,3 +79,119 @@
 .special_title {
     width: fit-content;
 }
+
+@media screen and (max-width: 1199px) {
+    .services {
+        padding: 50px 20px;
+    }
+
+    .work {
+        padding: 50px 20px;
+    }
+
+    .special {
+        padding: 50px 0;
+    }
+
+    .special_item {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .special_title {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .special_item {
+        align-items: center;
+    }
+
+    .special_item h3 {
+        text-align: center;
+    }
+
+    .special_item img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .services_title {
+        width: fit-content;
+        font-size: 30px;
+    }
+
+    .special_title {
+        width: fit-content;
+        font-size: 30px;
+    }
+
+    .special_items {
+        display: block;
+    }
+
+    .work_item_left {
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .circle {
+        align-self: flex-start;
+    }
+
+    .work_item_right {
+        align-self: flex-start;
+    }
+
+    .work {
+        padding-bottom: 0;
+    }
+
+    .special_item {
+        justify-content: center;
+        padding: 10px 130px;
+    }
+
+    .special_item h3 {
+        margin: 10px 0;
+    }
+
+    .work_items {
+        display: grid;
+        grid-template-columns: 2fr 0.8fr 0.8fr 2fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 20px 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .services_items {
+        display: grid;
+        grid-template: auto auto / repeat(2, 1fr);
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .work_items {
+        display: block;
+        text-align: center;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .work_item_right,
+    .work_item_left {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .special_item {
+        padding: 10px 10px;
+    }
+}

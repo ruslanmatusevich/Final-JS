@@ -26,3 +26,68 @@
     cursor: pointer;
     transition: all 1s;
 }
+
+@media screen and (max-width: 1399px) {
+    .header {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        width: 100%;
+        padding: 0;
+    }
+
+    .header .container {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header {
+        position: fixed;
+        z-index: 2;
+        height: 115px;
+    }
+
+    .header ul {
+        justify-content: space-around;
+        border: none;
+    }
+
+    .header .container {
+        display: block;
+        width: 500px;
+    }
+
+    .header ul li {
+        border: none;
+    }
+
+    .header_right ul li {
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .header_left {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        height: 70px
+    }
+
+    .header ul li {
+        padding: 0 20px;
+    }
+
+    .header ul {
+        justify-content: center;
+    }
+}

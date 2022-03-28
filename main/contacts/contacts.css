@@ -140,3 +140,105 @@
 .form_phone {
     margin: 1em 0;
 }
+
+@media screen and (max-width: 1199px) {
+    .contacts {
+        padding: 50px 20px;
+    }
+
+    .form {
+        grid-template-columns: 0.7fr 2fr;
+        gap: 0;
+    }
+
+    .form input,
+    .form_textarea {
+        padding: 9px;
+    }
+
+    .form_top_left,
+    .form_top_right {
+        padding: 13px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .form {
+        grid-template: auto auto / 1fr;
+    }
+
+    .form ul {
+        text-align: center;
+    }
+
+    .phone,
+    .fax,
+    .email {
+        justify-content: center;
+    }
+
+    .form h4 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contacts iframe {
+        height: 300px;
+        margin: 30px 0;
+    }
+
+    .address h4 {
+        margin-bottom: 25px;
+    }
+
+    .form h4 {
+        margin-bottom: 20px;
+    }
+
+    .form_top {
+        display: block;
+    }
+
+    .form_top_left,
+    .form_top_right {
+        width: 100%;
+    }
+
+    .form_textarea {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+
+    .contacts iframe {
+        height: 200px;
+        margin: 30px 0;
+    }
+
+    .contacts {
+        padding: 30px 0;
+    }
+
+    .form input,
+    .form_textarea {
+        font-size: 15px;
+    }
+
+    .about_descr_items {
+        text-align: center;
+    }
+
+    .address li {
+        text-align: left;
+    }
+
+
+
+    ul li.basket,
+    #in_basket {
+        display: none;
+    }
+}

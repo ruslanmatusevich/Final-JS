@@ -37,7 +37,7 @@
 /* @import 'sections/contacts.css'; */
 /* @import 'sections/login.css'; */
 /* @import 'sections/signup.css'; */
-@import 'sections/adaptations.css';
+/* @import 'sections/adaptations.css'; */
 /* @import 'sections/basket.css'; */
 
 * {
@@ -100,14 +100,28 @@ body {
 a {
     text-decoration: none;
     transition-timing-function: ease-in;
+    transition: all 1s;
 }
 
-a:hover {
+/* a:hover {
     text-decoration: none;
-}
+} */
 
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+@media screen and (max-width: 1399px) {
+    .container {
+        max-width: 1070px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
 }

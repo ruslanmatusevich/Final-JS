@@ -130,3 +130,58 @@
 .view:hover .mask {
     opacity: 1;
 }
+
+@media screen and (max-width: 991px) {
+    .advantages .wrapper {
+        grid-template-columns: 0.6fr 1fr;
+    }
+
+    .advantages_descr ul li {
+        margin: 13px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .advantages .wrapper {
+        display: block;
+    }
+
+    .advantages_descr h2 {
+        text-align: center;
+    }
+
+    .advantages_descr ul {
+        text-align: center;
+    }
+
+    .advantages_descr .more {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .advantages .wrapper {
+        padding: 0;
+    }
+
+    .advantages {
+        padding: 0;
+    }
+
+    .advantages_cards {
+        display: block;
+    }
+
+    .view {
+        display: flex;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #ff9900;
+    }
+
+    .view:last-child {
+        border-bottom: 1px solid #ff9900;
+    }
+}

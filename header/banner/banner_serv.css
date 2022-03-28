@@ -28,3 +28,81 @@
     color: #000;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1399px) {
+    .banner {
+        height: 630px;
+    }
+
+    .banner .container {
+        height: 630px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .banner .container {
+        max-width: 980px;
+    }
+
+    .banner_info {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .banner {
+        padding: 0 20px;
+    }
+
+    .banner_info h1 {
+        font-size: 35px;
+    }
+
+    .banner_info p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        height: 470px;
+    }
+
+    .banner .container {
+        height: 470px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .banner {
+        height: 469px;
+        padding: 0;
+    }
+
+    .banner_info h1 {
+        display: none;
+    }
+
+    .banner .container {
+        height: 469px;
+        align-items: center;
+    }
+
+    .banner_info a {
+        padding: 8px 30px;
+    }
+
+    .banner_info {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .banner1 {
+        height: 470px;
+    }
+
+    .banner1 {
+        background: url(../../header/banner/img/12.jpg) -80px 0px / cover no-repeat;
+    }
+}

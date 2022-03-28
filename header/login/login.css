@@ -33,7 +33,7 @@
     background-color: #212121;
 }
 
-.login_social:before {
+/* .login_social:before {
     content: '';
     background: #ff9900;
     height: 1px;
@@ -41,24 +41,24 @@
     position: absolute;
     top: 0%;
     left: 40%;
-}
+} */
 
-.login_social h5 {
+/* .login_social h5 {
     font-size: 1em;
     color: #212121;
     line-height: 1.5em;
     padding: 2em 0 3em;
-}
+} */
 
-.login_social a {
+/* .login_social a {
     color: #ff9900;
-}
+} */
 
-.login_social h5 a:hover {
+/* .login_social h5 a:hover {
     color: #212121;
-}
+} */
 
-.face {
+/* .face {
     background: url(../../img/4.png) no-repeat 27px 11px #3b5998;
     display: block;
     margin-left: 3.5em;
@@ -66,9 +66,9 @@
 
 .face:hover {
     background-color: #5175C1;
-}
+} */
 
-.twitt {
+/* .twitt {
     background: url(../../img/5.png) no-repeat 27px 11px #55acee;
     display: block;
     margin-left: 2em;
@@ -86,7 +86,7 @@ a.twitt {
     width: 37%;
     text-align: center;
     transition: 0.5s all;
-}
+} */
 
 .back_home {
     margin: 4em 0 0;
@@ -147,4 +147,14 @@ a.twitt {
 
 .login_password {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .container_login {
+        padding: 0;
+    }
+
+    .login form {
+        width: 65%;
+    }
 }
