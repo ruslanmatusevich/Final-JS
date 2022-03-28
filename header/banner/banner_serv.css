@@ -96,13 +96,8 @@
         width: 100%;
         text-align: center;
     }
-
-
     .banner1 {
         height: 470px;
-    }
-
-    .banner1 {
         background: url(../../header/banner/img/12.jpg) -80px 0px / cover no-repeat;
     }
 }
