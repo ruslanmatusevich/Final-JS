@@ -55,10 +55,7 @@ footer .twitter {
     gap: 5px;
 }
 
-.twitter_logo {
-    padding-left: 2em;
-    background: url(../../icons/img-sp.png) no-repeat -60px -178px;
-}
+
 
 .twitter_logo img {
     width: 1em;
@@ -154,6 +151,22 @@ ul.social li {
     font-size: .7rem;
     background: #565656;
 }
+.social a:hover .tooltip {
+    opacity: 1;
+}
+
+.pageup {
+    display: block;
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.pageup img {
+    width: 100%;
+}
 
 .social li a.social-facebook i {
     background: url(../../icons/img-sp.png) no-repeat -8px -230px;
@@ -189,23 +202,12 @@ ul.social li {
     width: 20px;
     height: 16px;
 }
-
-.social a:hover .tooltip {
-    opacity: 1;
+.twitter_logo {
+    padding-left: 2em;
+    background: url(../../icons/img-sp.png) no-repeat -60px -178px;
 }
 
-.pageup {
-    display: block;
-    position: fixed;
-    bottom: 60px;
-    right: 40px;
-    width: 40px;
-    height: 40px;
-}
 
-.pageup img {
-    width: 100%;
-}
 
 @media screen and (max-width: 1399px) {
     footer .container {

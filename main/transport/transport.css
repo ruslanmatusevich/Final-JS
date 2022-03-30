@@ -44,14 +44,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    /* display: block; */
+    
     margin-bottom: 50px;
 }
 
 .transport .counter_block_option {
     font-size: 22px;
     color: #c78030;
-    /* width: 50%; */
+    
 }
 
 .transport .counter_block_input {
@@ -91,7 +91,7 @@
 }
 
 .transport .counter_wrapper_total {
-    /* padding-bottom: 50px; */
+    
     text-align: right;
     font-size: 38px;
     color: #c78030;
@@ -115,12 +115,6 @@
     margin: 0;
 }
 
-#calc {}
-
-/* .counter_button {
-    display: flex;
-    justify-content: space-between;
-} */
 
 .counter button {
     cursor: pointer;
@@ -168,9 +162,6 @@
     .transport_descr {
         padding: 1em;
     }
-
-
-
     .transport_descr h2 {
         font-size: 29px;
     }
@@ -193,13 +184,17 @@
 }
 
 @media screen and (max-width: 575px) {
+    .transport {
+        display: block;
+    }
+    .transport .counter {
+        padding: 20px 10px;
+    }
+    
     .transport .counter_title {
         font-size: 25px;
     }
 
-    .transport .counter {
-        padding: 20px 10px;
-    }
 
     .transport .counter_block select {
         width: 200px;
@@ -227,8 +222,5 @@
         display: flex;
         justify-content: space-between;
     }
-
-    .transport {
-        display: block;
-    }
+    
 }

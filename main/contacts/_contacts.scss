@@ -7,136 +7,117 @@ $var6: #f5f5f5;
 $var7: #E6E6E6;
 
 .contacts {
-    padding: 70px 0;
-    width: 100%;
-    margin-bottom: 60px;
-
-    &_form {
-        padding-left: 15px;
-    }
+	padding: 70px 0;
+	iframe {
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	&_form h4 {
+		padding-left: 15px;
+	}
 }
-
-.address {
-    width: 20px;
-    height: 20px;
-    margin-right: 1em;
-    color: $var1;
-    position: relative;
-    top: 2px;
+.address img {
+	width: 20px;
+	height: 20px;
+	margin-right: 1em;
+	color: $var1;
+	position: relative;
+	top: 2px;
 }
-
-h4 {
-    margin-bottom: 44px;
-}
-
 .form {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 30px;
-    align-content: flex-start;
-    font-size: 1.5em;
-    color: $var1;
-    margin-bottom: 1.5em;
-    font-weight: 600;
-
-    &_top {
-        display: flex;
-        justify-content: space-between;
-
-        &_left,
-        &_right {
-            width: 50%;
-            padding: 15px;
-
-            input {
-                width: 100%;
-                padding: 15px;
-                color: $var4;
-            }
-        }
-
-        &_left {
-            color: $var4;
-        }
-
-        &_right {
-            color: $var4;
-        }
-    }
-
-    &_textarea {
-        height: 100%;
-        resize: vertical;
-    }
-
-    &_button {
-        display: flex;
-        justify-content: space-between;
-
-        .submit,
-        .reset {
-            width: 50%;
-            margin: 0 15px;
-            outline: none;
-            padding: 10px 0;
-            font-size: 14px;
-            color: $var5;
-            background: $var1;
-            transition: all 1s;
-            border: none;
-            text-transform: uppercase;
-            cursor: pointer;
-
-            &:hover {
-                background: $var4;
-            }
-        }
-    }
-
-    input,
-    &_textarea {
-        outline: none;
-        padding: 10px;
-        font-size: 16px;
-        color: $var4;
-        background: $var6;
-        width: 100%;
-        border: 1px solid $var7;
-    }
-
-    &_phone {
-        margin: 1em 0;
-    }
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 30px;
+	align-content: flex-start;
+	h4 {
+		font-size: 1.5em;
+		color: $var1;
+		margin-bottom: 1.5em;
+		font-weight: 600;
+	}
+	p {
+		color: $var2;
+		line-height: 1.8em;
+		margin-bottom: 1.5em;
+	}
+	&_top {
+		display: flex;
+		justify-content: space-between;
+		&_left, &_right {
+			width: 50%;
+			padding: 15px;
+			input {
+				width: 100%;
+				padding: 15px;
+				color: $var4;
+			}
+		}
+		&_left input::-webkit-input-placeholder {
+			color: $var4;
+		}
+		&_right textarea::-webkit-input-placeholder {
+			color: $var4;
+		}
+		&_left input:focus::-webkit-input-placeholder {
+			color: transparent;
+		}
+		&_right textarea:focus::-webkit-input-placeholder {
+			color: transparent;
+		}
+		&_right input {
+			height: 100%;
+		}
+	}
+	&_textarea {
+		height: 100%;
+		resize: vertical;
+	}
+	&_button {
+		display: flex;
+		justify-content: space-between;
+		.submit, .reset {
+			width: 50%;
+			margin: 0 15px;
+			outline: none;
+			padding: 10px 0;
+			font-size: 14px;
+			color: $var5;
+			background: $var1;
+			transition: all 1s;
+			border: none;
+			text-transform: uppercase;
+			cursor: pointer;
+			&:hover {
+				background: $var4;
+			}
+		}
+	}
+	input, &_textarea {
+		outline: none;
+		padding: 10px;
+		font-size: 16px;
+		color: $var4;
+		background: $var6;
+		width: 100%;
+		border: 1px solid $var7;
+	}
+	&_phone {
+		margin: 1em 0;
+	}
+}
+.address h4 {
+	margin-bottom: 44px;
+}
+.phone, .fax, .email {
+	display: flex;
+}
+.email a {
+	color: $var2;
+	&:hover {
+		color: $var3;
+	}
 }
 
-p {
-    color: $var2;
-    line-height: 1.8em;
-    margin-bottom: 1.5em;
-}
-
-.phone,
-.fax,
-.email {
-    display: flex;
-}
-
-.email {
-    color: $var2;
-    color: $var3;
-}
-
-:focus {
-    color: transparent;
-}
-
-:focus {
-    color: transparent;
-}
-
-input {
-    height: 100%;
-}
 
 
 @media screen and (max-width: 1199px) {

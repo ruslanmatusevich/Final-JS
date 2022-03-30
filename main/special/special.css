@@ -195,12 +195,14 @@
 .info_tabcontent .photo {
     display: flex;
     align-items: center;
-}
-
-.info_tabcontent .photo img {
+    padding-left: 10px;
     width: 100%;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
 }
+
+/* .info_tabcontent .photo img {
+    
+} */
 
 .info .hide {
     display: none;
@@ -236,8 +238,8 @@
 }
 
 @media screen and (max-width: 767px) {
-    .info_tabcontent {
-        display: block;
+    .info_header .info_tabcontent {
+        display: flex;
     }
 
     .info_tabcontent .description_title::after {
