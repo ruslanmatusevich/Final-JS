@@ -6,30 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUS ROAD</title>
-    <meta name="description"
-        content="Подача машины в кратчайшие сроки. Низкие цены. Грузчики. В понедельник скидка -10%.">
+    <meta name="description" content="Подача машины в кратчайшие сроки. Низкие цены. Грузчики. В понедельник скидка -10%">
     <meta name="keywords" content="Автомобильные перевозки, перевозки, транспортная компания, дальнобой" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="icons/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
 </head>
 
 <body>
     <header>
-        <section class="header" id="up">
+        <section class="header">
             <div class="container">
                 <div class="header_left">
                     <ul>
@@ -50,11 +41,9 @@
                         </li>
                         <li class="hello">
                             <span class="hello_text"></span>
-
                         </li>
                         <li class="out">
                             <a></a>
-
                         </li>
                         <li class="basket">
                             <a href="basket.html">
@@ -74,12 +63,9 @@
                 </div>
                 <nav class="navbar">
                     <div class="burger_menu" >
-
                         <span class="navicon"></span>
                     </div>
-                    <ul class="menu">
-                       
-                    </ul>
+                    <ul class="menu"></ul>
                 </nav>
             </div>
         </section>
@@ -87,19 +73,22 @@
             <div class="container_login">
                 <div class="login_wrap">
                     <h2 class="services_title">Войти</h2>
-                    <p class="services_subtitle">Пожалуйста, введите свои 
-                        данные для входа. 
+                    <p class="services_subtitle">Пожалуйста, введите свои данные для входа.</p>   
                 </div>
                 <form action="#" method="POST">
                     <input type="text" name="name" placeholder="имя пользователя" class="login_name" required>
-                    <div class="login_alert"><span></span></div>
+                    <div class="login_alert">
+                        <span></span>
+                    </div>
                     <input type="password" name="password" placeholder="пароль" class="login_password" required>
-                    <div class="password_alert"><span></span></div>
+                    <div class="password_alert">
+                        <span></span>
+                    </div>
                     <input type="button" value="Войти" class="login_submit">
                 </form>
-                <div class="back_home">
-                    <a href="index.html">Вернуться на главную</a>
-                </div>
+                <a href="index.html">
+                     <div class="back_home">Вернуться назад</div>
+                 </a>
             </div>
         </section>
         <section class="banner">
@@ -127,10 +116,11 @@
                     <div class="info_tabcontent fade">
                         <div class="description">
                             <div class="description_title">Авторефрижераторы</div>
-                            <div class="description_text">Авторефрижератор – это коммерческая техника, оснащённая специальным климатическим оборудованием, кузов которой представляет собой камеру из теплоизолированных материалов. Эти машины могут поддерживать температуру в диапазоне от +12 до -20 градусов, в зависимости от модели. Кроме того, есть установки способные понизить температуру в кузове до -38С. Для возможности транспортировки сборных грузов используют кузова, состоящие из нескольких секций с разным температурным режимом.
+                            <div class="description_text">
+                                Авторефрижератор – это коммерческая техника, оснащённая специальным климатическим оборудованием, кузов которой представляет собой камеру из теплоизолированных материалов. Эти машины могут поддерживать температуру в диапазоне от +12 до -20 градусов, в зависимости от модели. Кроме того, есть установки способные понизить температуру в кузове до -38С. Для возможности транспортировки сборных грузов используют кузова, состоящие из нескольких секций с разным температурным режимом.
                             </div>
                             <div class="description_btn">
-                                <a href="#">подробнее</a>
+                                <a href="./about.html">подробнее</a>
                             </div>
                         </div>
                         <div class="photo">
@@ -140,11 +130,12 @@
                     <div class="info_tabcontent fade">
                         <div class="description">
                             <div class="description_title">Самосвалы</div>
-                            <div class="description_text">Наша компания обладает собственным автопарком самосвалов с различными кузовами. Машины проходят регулярную проверку и техническое обслуживание. Опытные водители обеспечат надежную доставку до места назначения. Транспорт оснащен системами спутникового слежения – все этапы перевозки груза находятся под контролем.
-                            В автопарке есть самосвалы с разными объемами кузова: от 10 до 60 куб м. Способ разгрузки: задняя, боковая, двусторонняя, универсальная. Для защиты сыпучих грузов от просыпания используется плотный укрывающий материал.
+                            <div class="description_text">
+                                Наша компания обладает собственным автопарком самосвалов с различными кузовами. Машины проходят регулярную проверку и техническое обслуживание. Опытные водители обеспечат надежную доставку до места назначения. Транспорт оснащен системами спутникового слежения – все этапы перевозки груза находятся под контролем.
+                                В автопарке есть самосвалы с разными объемами кузова: от 10 до 60 куб м. Способ разгрузки: задняя, боковая, двусторонняя, универсальная. Для защиты сыпучих грузов от просыпания используется плотный укрывающий материал.
                             </div>
                             <div class="description_btn">
-                                <a href="#">подробнее</a>
+                                <a href="./about.html">подробнее</a>
                             </div>
                         </div>
                         <div class="photo">
@@ -154,10 +145,11 @@
                     <div class="info_tabcontent fade">
                         <div class="description">
                             <div class="description_title">Негабариты</div>
-                            <div class="description_text">У вас есть негабаритный груз, который нужно перевезти по Минску или за его пределы? Мы знаем, как сделать это максимально быстро и безопасно. Наши собственные автопоезда перевезут грузы, которые больше, шире, выше и тяжелее стандартных. Чаще всего это неразборные конструкции, технологическое оборудование или сельскохозяйственная техника. Наиболее распространена перевозка негабаритных грузов автомобильным транспортом, так как этот вариант наиболее удобен и экономичен.
+                            <div class="description_text">
+                                У вас есть негабаритный груз, который нужно перевезти по Минску или за его пределы? Мы знаем, как сделать это максимально быстро и безопасно. Наши собственные автопоезда перевезут грузы, которые больше, шире, выше и тяжелее стандартных. Чаще всего это неразборные конструкции, технологическое оборудование или сельскохозяйственная техника. Наиболее распространена перевозка негабаритных грузов автомобильным транспортом, так как этот вариант наиболее удобен и экономичен.
                             </div>
                             <div class="description_btn">
-                                <a href="#">подробнее</a>
+                                <a href="./about.html">подробнее</a>
                             </div>
                         </div>
                         <div class="photo">
@@ -167,10 +159,11 @@
                     <div class="info_tabcontent fade">
                         <div class="description">
                             <div class="description_title">Автоцистерны</div>
-                            <div class="description_text">Неопасные вещества перевозятся в цистернах IMO2 — именно такие автоцистерны и находятся в нашем распоряжении. Материал для изготовления всех цистерн — нержавеющая сталь. Независимо от характера груза все цистерны для перевозки обеспечиваются термоизоляцией. Большинство разновидностей цистерн для неопасного груза имеет в своей конструкции и паровую рубашку. При такой конструкции цистерны имеют полое межстенное пространство, куда подаётся горячий пар. Необходимая температура контролируется с помощью системы термометров и датчиков.
+                            <div class="description_text">
+                                Неопасные вещества перевозятся в цистернах IMO2 — именно такие автоцистерны и находятся в нашем распоряжении. Материал для изготовления всех цистерн — нержавеющая сталь. Независимо от характера груза все цистерны для перевозки обеспечиваются термоизоляцией. Большинство разновидностей цистерн для неопасного груза имеет в своей конструкции и паровую рубашку. При такой конструкции цистерны имеют полое межстенное пространство, куда подаётся горячий пар. Необходимая температура контролируется с помощью системы термометров и датчиков.
                             </div>
                             <div class="description_btn">
-                                <a href="#">подробнее</a>
+                                <a href="./about.html">подробнее</a>
                             </div>
                         </div>
                         <div class="photo">
@@ -197,7 +190,7 @@
                             <li>ежегодное тестирование водителей и сотрудников на соответствие нашим стандартам</li>
                         </ul>
                         <div class="more">
-                            <a href="news.html">Подробнее</a>
+                            <a href="about.html">Подробнее</a>
                         </div>
                     </div>
                     <div class="advantages_cards">
@@ -246,14 +239,12 @@
             </div>
         </section>
         <section class="transport">
-            
             <div class="foto">
                 <img src="main/transport/5.jpg" alt="foto">
             </div>
             <div class="counter" id="price">
                 <div class="counter_wrapper_block">
-                    <div class="counter_title">Рассчитайте стоимость перевозки
-                    </div>
+                    <div class="counter_title">Рассчитайте стоимость перевозки</div>
                     <div class="counter_block">
                         <div class="counter_block_option">Откуда</div>
                         <select name="place" id="from">
@@ -274,36 +265,32 @@
                     </div>
                     <div class="counter_block">
                         <div class="counter_block_option">Тоннаж груза (т)</div>
-                        <input type="number" min="1" step="1" class="counter_block_input">
+                        <input type="number" class="weight">
                     </div>
                     <div class="counter_block">
                         <div class="counter_block_option">Тип оплаты</div>
                         <select name="place" id="payment" >
                             <option  value="0">Выберите</option>
                             <option  value="1">Расчет на карту</option>
-                            <option  value="0.9">Наличный расчет</option>
+                            <option  value="0.8">Наличный расчет</option>
                             <option  value="1.2">Безналичный расчет</option>
+                            <option  value="0.5">В долларах !!!</option>
                         </select>
                     </div>
                     <button id="in_basket" type="submit">Сохранить расчет</button>
-
                 </div>
                 <div class="counter_wrapper_total">
                     <div class="counter_total_length">
                          Расстояние<br>
-                        <span id="distance">0</span>
+                        <span id="distance"></span>
                     </div>
                     <div class="counter_total_sum">
                         Стоимость<br>
-                        <span id="total">0</span>
+                        <span id="total"></span>
                     </div>
                     <button id="calc" type="button">Расчитать</button>
-
+                    <div class="enter">выполните вход на сайт</div>
                 </div>
-                <!-- <div class="counter_button"> -->
-                <!-- </div> -->
-                
-
             </div>
         </section>
         <section class="news">
@@ -325,18 +312,14 @@
                         </div>
                         <div class="news_descr">
                             <img src="main/news/img/6.jpg" alt="img">
-                            
-                                <h4 class="title">
+                            <h4 class="title">
                                     <a href="news.html">Международная выставка грузовиков в США, Луизвилль</a>
                                 </h4>
                                 <p>Одна из крупнейших в мире выставок, посвященная грузовым автомобилям, Mid-America
                                     Trucking Show или коротко MATS 2021 пройдет с 16 по 18 сентября в Луизвилле, США, и
                                     даст посетителям возможность посмотреть и протестировать новые продукты и услуги.
                                 </p>
-                        
-                            
                         </div>
-                        <!-- <div class="clearfix"></div> -->
                     </div>
                     <div class="slider_item">
                         <div class="news_item">
@@ -361,7 +344,6 @@
                                 водителей-россиян - у DW.
                             </p>
                         </div>
-                        <div class="clearfix"> </div>
                     </div>
                     <div class="slider_item">
                         <div class="news_item">
@@ -386,7 +368,6 @@
                                 работает за пределами родной страны.
                             </p>
                         </div>
-                        <div class="clearfix"></div>
                     </div>
                     <div class="slider_item">
                         <div class="news_item">
@@ -412,7 +393,6 @@
                                 украинских водителей.
                             </p>
                         </div>
-                        <div class="clearfix"> </div>
                     </div>
                     <div class="slider_item">
                         <div class="news_item">
@@ -437,7 +417,6 @@
                                 меры Москвы.
                             </p>
                         </div>
-                        <div class="clearfix"> </div>
                     </div>
                     <div class="slider_item">
                         <div class="news_item">
@@ -461,10 +440,13 @@
                                 наиболее известные грузовики марки Mercedes, появившиеся в последние 50 лет.
                             </p>
                         </div>
-                        <div class="clearfix"> </div>
                     </div>
-                    <div class="prev"><div class="arrow_left"></div></div>
-                    <div class="next"><div class="arrow_right"></div></div>
+                    <div class="prev">
+                        <div class="arrow_left"></div>
+                    </div>
+                    <div class="next">
+                        <div class="arrow_right"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -570,15 +552,20 @@
             </div>
         </div>
         <div>
-            <a href="#up" class="pageup">
+            <a  class="pageup">
                 <img src="footer/icons/up.svg" alt="up">
             </a>
         </div>
     </footer>
     <script src="js/input.js"></script>
-    <script src="js/burger.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/calc.js"></script>
+    <script src="js/formInBasket.js"></script>
+    <script src="js/basket.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/up.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>

@@ -11,26 +11,17 @@
     <meta name="keywords" content="Автомобильные перевозки, перевозки, транспортная компания, дальнобой" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
-    <link rel="manifest" href="icons/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.min.css">
-
+    <link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
 </head>
 
 <body>
     <header>
-        <section class="header" id="up">
+        <section class="header" >
             <div class="container">
                 <div class="header_left">
                     <ul>
@@ -51,16 +42,13 @@
                         </li>
                         <li class="hello">
                             <span class="hello_text"></span>
-
                         </li>
                         <li class="out">
                             <a></a>
-
                         </li>
                         <li class="basket">
                             <a href="basket.html">
                                 <img src="header/input/basket.svg" alt="basket">
-                                <!-- <span>Корзина</span> -->
                             </a>
                         </li>
                     </ul>
@@ -74,22 +62,11 @@
                         <img src="header/menu/1.svg" alt="logo">
                     </a>
                 </div>
-                <!-- <nav class="navbar">
-                    <input class="menu-btn" type="checkbox" id="menu-btn">
-                    <label class="menu-icon" for="menu-btn">
-                        <span class="navicon"></span>
-                    </label>
-                    <ul class="menu">
-                       
-                    </ul>
-                </nav> -->
                 <nav class="navbar">
                     <div class="burger_menu" >
-
                         <span class="navicon"></span>
                     </div>
                     <ul class="menu">
-                       
                     </ul>
                 </nav>
             </div>
@@ -108,16 +85,9 @@
                     <div class="password_alert"><span></span></div>
                     <input type="button" value="Войти" class="login_submit">
                 </form>
-                <!-- <div class="login_social">
-                    <h5>Войдите в систему с помощью <a href="#">Facebook</a> или <a href="#">Twitter</a></h5>
-                    <div class="login_social_links">
-                        <a href="#" class="face">Facebook</a>
-                        <a href="#" class="twitt">Twitter</a>
-                    </div>
-                </div> -->
-                <div class="back_home">
-                    <a href="index.html">Вернуться на главную</a>
-                </div>
+                <a href="basket.html">
+					<div class="back_home">Вернуться назад</div>
+				</a>
             </div>
         </section>
         <div class="banner1">
@@ -158,11 +128,26 @@
                                 грузоперевозки.
                             </p>
                             <div class="more">
-                                <a href="news.html">Подробнее</a>
+                                <a >Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="info_car_wrap">
+                <h2>Выберите грузовик</h2>
+                <section>
+                    <div class="image_out"></div>
+            </section>
+            <section>
+                <div class="info_car">
+                    <div class="car_model"></div>
+                    <div class="car_power"></div>
+                    <div class="car_payload"></div>
+                    <div class="car_speed"></div>
+                    <div class="car_volume"></div>  
+                </div>
+            </section>
             </div>
             <div class="stat">
                 <div class="container">
@@ -331,15 +316,18 @@
             </div>
         </div>
         <div>
-            <a href="#up" class="pageup">
+            <a  class="pageup">
                 <img src="footer/icons/up.svg" alt="up">
             </a>
         </div>
     </footer>
+    <script src="main/about/images.js"></script>
+    <script src="main/about/scriptImg.js"></script> 
+    <script src="js/up.js"></script>
+    
     <script src="js/input.js"></script>
-
     <script src="js/menu.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>

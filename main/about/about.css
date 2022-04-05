@@ -1,332 +1,309 @@
 .about {
-    padding: 70px 0;
+  padding: 70px 0;
 }
-
+.about_descr {
+  margin-bottom: 50px;
+}
 .about_descr_items {
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
-
 .about_descr_item_left {
-    display: grid;
-    grid-template: 0.6fr 1fr / repeat(2, 1fr);
-    gap: 30px;
-    padding: 0 10px;
-    width: 100%;
-    height: 100%;
+  display: grid;
+  grid-template: 0.6fr 1fr / 1fr 1fr;
+  gap: 30px;
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
 }
-
 .about_descr_item_left img:last-child {
-    grid-column: 1/3;
+  grid-column: 1/3;
 }
-
 .about_descr_item_left img {
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    justify-self: flex-end;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  justify-self: flex-end;
 }
-
 .about_descr_item_right {
-    display: grid;
-    grid-template-rows: 100px 1fr 100px;
+  display: grid;
+  grid-template-rows: 100px 1fr 100px;
 }
-
 .about_descr_item_right h3 {
-    font-size: 30px;
+  font-size: 30px;
 }
-
 .about_descr_item_right p {
-    padding: 20px 0;
-    color: #999;
+  padding: 20px 0;
+  color: #999999;
 }
-
 .about_descr_item_right p span {
-    color: #ff9900;
+  color: #ff9900;
 }
-
-.stat {
-    background: url(../../img/13.jpg) 0px 0px / cover no-repeat;
-    min-height: 300px;
-    color: white;
-    margin-top: 80px;
-}
-
-.stat_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.stat_item img {
-    width: 40px;
-    height: 40px;
-}
-
-.stat .counter {
-    margin: 20px 0;
-    font-size: 2.5em;
-    font-weight: 700;
-    font-family: 'Open Sans', serif;
-}
-
-.stat_title {
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-.stat_wrap {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    padding: 80px 0;
-}
-
 .about_buttom {
-    padding-top: 80px;
+  padding-top: 80px;
 }
-
 .about_buttom .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 .about_buttom_left {
-    padding: 0 10px;
-    width: 50%;
+  padding: 0 10px;
+  width: 50%;
 }
-
 .about_buttom_left h3 {
-    margin-top: 0;
-    font-size: 25px;
+  margin-top: 0;
+  font-size: 25px;
 }
-
 .about_buttom_left ol {
-    padding-left: 20px;
+  padding-left: 20px;
 }
-
 .about_buttom_left ol li {
-    margin-bottom: 15px;
-    font-size: 17px;
-    color: #999;
+  margin-bottom: 15px;
+  font-size: 17px;
+  color: #999999;
 }
-
 .about_buttom_left p {
-    font-size: 17px;
-    color: #999;
-    margin: 1em 0 1em;
+  font-size: 17px;
+  color: #999999;
+  margin: 1em 0 1em;
 }
-
 .about_buttom_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 50%;
+}
+.about_buttom_strip {
+  background-color: #E4E4E4;
+  height: 4px;
+  width: 100%;
+  position: relative;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+.about_buttom_strip:after {
+  height: 4px;
+  border-radius: 2px;
+  background: #ff9900;
+  content: '';
+  position: absolute;
+  display: block;
+}
+.about_buttom_strip1:after {
+  width: 67%;
+}
+.about_buttom_strip2:after {
+  width: 38%;
+}
+.about_buttom_strip3:after {
+  width: 47%;
+}
+.about_buttom_strip4:after {
+  width: 100%;
+}
+.about_buttom_strip5:after {
+  width: 80%;
+}
+.info_car_wrap {
+  display: none;
+  min-height: 500px;
+  padding: 30px 0 30px;
+  background: url(../main/about/img/main_bg.jpg);
+}
+.info_car_wrap h2 {
+  color: #E4E4E4;
+  text-align: center;
+  margin: 0 0 10px;
+}
+.info_car > div {
+  color: #E4E4E4;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+}
+.image_out {
+  display: flex;
+  justify-content: center;
+}
+.image_out img {
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.image_out .active {
+  box-shadow: 0 0 10px #ff9900;
+}
+.stat {
+  background: url(../main/about/img/13.jpg) 0px 0px / cover no-repeat;
+  min-height: 300px;
+  color: white;
+}
+.stat_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat_item img {
+  width: 40px;
+  height: 40px;
+}
+.stat .counter {
+  margin: 20px 0;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: 'Open Sans', serif;
+}
+.stat_title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.stat_wrap {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 80px 0;
+}
+@media screen and (max-width: 1199px) {
+  .about {
+    padding: 50px 0;
+  }
+  .about_descr_items {
+    margin-top: 60px;
+  }
+  .about_descr_item_right p {
+    padding-top: 50px;
+  }
+  .image_out {
+    justify-content: space-between;
+  }
+  .image_out img {
+    width: 25%;
+  }
+  .info_car > div {
+    font-size: 21px;
+  }
+  .stat .counter {
+    font-size: 1.5em;
+  }
+  .stat_title {
+    font-size: 1em;
+    text-align: center;
+  }
+  .about_buttom_left,
+  .about_buttom_right {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .about_descr_item_left {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  }
+  .about_descr_item_left img {
+    object-fit: cover;
+  }
+  .about_descr_item_left img:nth-child(2) {
+    display: none;
+  }
+  .stat_item {
     padding: 0 10px;
-    width: 50%;
+    flex-wrap: wrap;
+  }
+  .about_descr_item_right {
+    padding-right: 10px;
+  }
 }
-
-.about_buttom_strip {
-    background-color: #E4E4E4;
-    height: 4px;
-    width: 100%;
-    position: relative;
-    border-radius: 2px;
-    margin-bottom: 30px;
-}
-
-.about_buttom_strip:after {
-    height: 4px;
-    border-radius: 2px;
-    background: #ff9900;
-    display: block;
-    content: '';
-    position: absolute;
-    display: block;
-}
-
-.about_buttom_strip1:after {
-    width: 67%;
-}
-
-.about_buttom_strip2:after {
-    width: 38%;
-}
-
-.about_buttom_strip3:after {
-    width: 47%;
-}
-
-.about_buttom_strip4:after {
-    width: 100%;
-}
-
-.about_buttom_strip5:after {
-    width: 80%;
-}
-
-@media screen and (max-width: 1199px) {
-    .about {
-        padding: 50px 0;
-    }
-
-    .about_descr_items {
-        margin-top: 60px;
-    }
-
-    .about_descr_item_right p {
-        padding-top: 50px;
-    }
-
-    .stat .counter {
-        font-size: 1.5em;
-    }
-
-    .stat_title {
-        font-size: 17px;
-    }
-
-    .about_buttom_left,
-    .about_buttom_right {
-        padding: 0 20px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .about_descr_item_left img:nth-child(2) {
-        display: none;
-    }
-
-    .about_descr_item_left img {
-        object-fit: cover;
-    }
-
-    .about_descr_item_left {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .stat_wrap {
-        display: grid;
-        grid-template: repeat(2, auto) / repeat(2, auto);
-        gap: 10px;
-        padding: 30px;
-    }
-
-    .about_descr_item_right {
-        padding-right: 10px;
-    }
-}
-
 @media screen and (max-width: 767px) {
-    .about {
-        padding: 30px 0;
-    }
-
-    .about_descr_items {
-        margin-top: 40px;
-        gap: 0;
-    }
-
-    .about_descr_item_left img {
-        object-fit: cover;
-    }
-
-    .about_descr_item_right h3 {
-        font-size: 26px;
-    }
-
-    .stat .counter {
-        font-size: 22px;
-    }
-
-    .stat_title {
-        font-size: 15px;
-    }
-
-    .about_buttom {
-        padding-top: 50px;
-    }
+  .about {
+    padding: 30px 0;
+  }
+  .about_buttom {
+    padding-top: 50px;
+  }
+  .about_descr_items {
+    margin-top: 40px;
+    gap: 0;
+  }
+  .about_descr_item_left {
+    object-fit: cover;
+  }
+  .stat .counter {
+    font-size: 1em;
+  }
+  .stat_title {
+    font-size: 15px;
+  }
+  .image_out {
+    flex-wrap: wrap;
+  }
+  .image_out img {
+    width: 50%;
+  }
 }
-
 @media screen and (max-width: 575px) {
-
-
-    .services_title {
-        font-size: 18px;
-    }
-
-    .about_descr_item_left img:first-child {
-        display: none;
-    }
-
-    .about_descr_items {
-        display: block;
-    }
-
-    .about_descr_item_left img {
-        height: 180px;
-    }
-
-    .about_descr_item_left img {
-        object-fit: cover;
-        height: 180px;
-    }
-
-    .about_descr_item_right h3 {
-        font-size: 22px;
-        text-align: center;
-    }
-
-    .about_descr_item_right p {
-        padding: 0 10px;
-        margin-bottom: 20px;
-    }
-
-    .stat {
-        margin-top: 0;
-    }
-
-    .about_descr_item_right .more {
-        padding-left: 10px;
-    }
-
-    .stat_item img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .stat .counter {
-        font-size: 20px;
-    }
-
-    .stat_title {
-        font-size: 14px;
-        text-align: center;
-    }
-
-    .about_buttom_right {
-        display: none;
-    }
-
-    .about_buttom_left h3 {
-        text-align: center;
-        font-size: 22px;
-    }
-
-    .about_descr_item_right h3 {
-        margin: 10px;
-    }
-
-    .about_buttom {
-        padding-top: 20px;
-    }
-
-    .about_buttom_left {
-        width: 100%;
-    }
-
-    .about_buttom .container {
-        display: block;
-    }
+  .services_title {
+    font-size: 18px;
+  }
+  .about_descr_item_left img {
+    object-fit: cover;
+    height: 180px;
+  }
+  .about_descr_item_left img:first-child {
+    display: none;
+  }
+  .about_descr_items {
+    display: block;
+  }
+  .about_descr_item_right h3 {
+    font-size: 22px;
+    text-align: center;
+    margin: 10px;
+  }
+  .about_descr_item_right p {
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .about_descr_item_right .more {
+    padding-left: 10px;
+  }
+  .stat {
+    margin-top: 0;
+  }
+  .stat .counter {
+    font-size: 20px;
+  }
+  .stat_item img {
+    width: 30px;
+    height: 30px;
+  }
+  .stat_title {
+    font-size: 14px;
+    text-align: center;
+  }
+  .about_buttom_right {
+    display: none;
+  }
+  .about_buttom_left {
+    width: 100%;
+  }
+  .about_buttom_left h3 {
+    text-align: center;
+    font-size: 22px;
+  }
+  .about_buttom {
+    padding-top: 20px;
+  }
+  .about_buttom .container {
+    display: block;
+  }
+  .stat_wrap {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 80px 0;
+  }
 }

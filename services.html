@@ -6,31 +6,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>RUS ROAD</title>
-	<meta name="description"
-		content="Подача машины в кратчайшие сроки. Низкие цены. Грузчики. В понедельник скидка -10%.">
+	<meta name="description" content="Подача машины в кратчайшие сроки. Низкие цены. Грузчики. В понедельник скидка -10%.">
 	<meta name="keywords" content="Автомобильные перевозки, перевозки, транспортная компания, дальнобой" />
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
-	<link rel="manifest" href="icons/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.min.css">
-
+	<link rel="stylesheet/less" type="text/css" href="less/style.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4" ></script>
 </head>
 
 <body>
 	<header>
-		<section class="header" id="up">
+		<section class="header">
             <div class="container">
                 <div class="header_left">
                     <ul>
@@ -51,16 +41,13 @@
                         </li>
                         <li class="hello">
                             <span class="hello_text"></span>
-
                         </li>
                         <li class="out">
                             <a></a>
-
                         </li>
                         <li class="basket">
                             <a href="basket.html">
                                 <img src="header/input/basket.svg" alt="basket">
-                                <!-- <span>Корзина</span> -->
                             </a>
                         </li>
                     </ul>
@@ -76,26 +63,11 @@
                 </div>
 				<nav class="navbar">
                     <div class="burger_menu" >
-
                         <span class="navicon"></span>
                     </div>
                     <ul class="menu">
-                       
                     </ul>
                 </nav>
-				<!-- <nav class="navbar">
-					<input class="menu-btn" type="checkbox" id="menu-btn" />
-					<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-					<ul class="menu"> -->
-						<!-- <li><a href="index.html"><span data-description="Главная">Главная</span></a>
-						</li>
-						<li class="active"><a href="services.html"><span data-description="Сервис">Сервис</span></a>
-						</li>
-						<li><a href="about.html"><span data-description="О нас">О нас</span></a></li>
-						<li><a href="news.html"><span data-description="Новости">Новости</span></a></li>
-						<li><a href="contacts.html"><span data-description="Контакты">Контакты</span></a></li> -->
-					<!-- </ul>
-				</nav> -->
 			</div>
 		</section>
 		<section class="login">
@@ -112,16 +84,9 @@
                     <div class="password_alert"><span></span></div>
                     <input type="button" value="Войти" class="login_submit">
                 </form>
-                <!-- <div class="login_social">
-                    <h5>Войдите в систему с помощью <a href="#">Facebook</a> или <a href="#">Twitter</a></h5>
-                    <div class="login_social_links">
-                        <a href="#" class="face">Facebook</a>
-                        <a href="#" class="twitt">Twitter</a>
-                    </div>
-                </div> -->
-                <div class="back_home">
-                    <a href="index.html">Вернуться на главную</a>
-                </div>
+                <a href="services.html">
+					<div class="back_home">Вернуться назад</div>
+				</a>
             </div>
         </section>
 		<div class="banner1">
@@ -444,10 +409,10 @@
             </a>
         </div>
     </footer>
-    <script src="js/input.js"></script>
-
-	<script src="js/menu.js"></script>
-    <script src="js/script.js"></script>
+	<script src="js/input.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/up.js"></script>
+    <script src="js/burger.js"></script>
 </body>
 
 </html>

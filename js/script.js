@@ -1,5 +1,4 @@
-/* localStorage.setItem('ruslan', 'RUS9257700lan'); */
-/* console.log(localStorage.getItem('ruslan')); */
+
 window.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
@@ -25,8 +24,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
         
 //calculator
-        distance.innerHTML = 0;
-        totalSum.innerHTML = 0;
+        distance.textContent = 0;
+        totalSum.textContent = 0;
 
         weight.addEventListener('change', function() {
             weightSum = +this.value;
@@ -40,10 +39,10 @@ window.addEventListener('DOMContentLoaded', function() {
            totalFrom = fromText.value;
            
            if ( (totalFrom < 0 ) || (totalWhere < 0 )) {
-            distance.innerHTML = 0;
+            distance.textContent = 0;
         } else {
             totalDistance = (totalFrom - totalWhere) > 0 ? (totalFrom - totalWhere) : ((totalFrom - totalWhere) * (-1));
-            distance.innerHTML = totalDistance;
+            distance.textContent = totalDistance;
         }
              });
 
@@ -53,10 +52,10 @@ window.addEventListener('DOMContentLoaded', function() {
             
 
             if ( (totalFrom < 0 ) || (totalWhere < 0 )) {
-                distance.innerHTML = 0;
+                distance.textContent = 0;
             } else {
                 totalDistance = (totalFrom - totalWhere) > 0 ? (totalFrom - totalWhere) : ((totalFrom - totalWhere) * (-1));
-                distance.innerHTML = totalDistance;
+                distance.textContent = totalDistance;
             }
              });
 
@@ -67,9 +66,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
                 calc.addEventListener('click', function() {
                     if (weight.value && curPayment !== 0 && totalDistance !== 0) {
-                        totalSum.innerHTML = ((total * curPayment) * totalDistance).toFixed();
+                        totalSum.textContent = ((total * curPayment) * totalDistance).toFixed();
                     } else {
-                        totalSum.innerHTML = 0;
+                        totalSum.textContent = 0;
                         }
                 });
                 

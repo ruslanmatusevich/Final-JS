@@ -1,267 +1,226 @@
 .logo {
-    display: block;
-    height: 100px;
-    transition: all 1s;
+  display: block;
+  height: 100px;
+  margin-left: 17px;
 }
-
 .logo a img {
-    position: relative;
-    height: 100px;
-    transform: scale(1.7);
-    z-index: -1;
-    top: 6px;
-    left: 40px;
+  position: relative;
+  height: 100px;
+  transform: scale(1.7);
+  z-index: -1;
+  top: 6px;
+  left: 40px;
 }
-
 .logo_nav .container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 .logo_nav {
-    position: relative;
+  position: relative;
 }
-
 .navbar {
-    margin: auto 0;
+  margin: auto 0;
 }
-
 .navbar ul {
-    display: flex;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
+  display: flex;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
 }
-
 .navbar ul li.active span {
-    color: #ff9900;
+  color: #ff9900;
 }
-
-.navbar ul>li>a {
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 0 20px;
+.navbar ul > li > a {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0 20px;
 }
-
 .navbar a span {
-    color: #777;
-    position: relative;
-    display: inline-block;
-    transition: 0.4s;
+  color: #777777;
+  position: relative;
+  display: inline-block;
+  transition: 0.4s;
 }
-
 .navbar a span::before {
-    color: #ff9900;
-    position: absolute;
-    top: 100%;
-    content: attr(data-description);
+  color: #ff9900;
+  position: absolute;
+  top: 100%;
+  content: attr(data-description);
 }
-
 .navbar a:hover span {
-    color: #ff9900;
-    transform: translateY(-100%);
+  color: #ff9900;
+  transform: translateY(-100%);
 }
-
-
-
 .burger_menu {
-    display: none;
-    cursor: pointer;
-    padding: 20px 20px;
-    position: absolute;
-    right: 53px;
-    top: 4px;
-    position: fixed;
-    top: 120px;
-    z-index: 3;
-    border-radius: 30%;
-    transition: all 1s;
+  display: none;
+  cursor: pointer;
+  padding: 20px 20px;
+  position: absolute;
+  right: 53px;
+  top: 4px;
+  position: fixed;
+  top: 120px;
+  z-index: 2;
+  border-radius: 30%;
+  transition: all 1s;
 }
-
 .burger_menu:hover {
-    background: #ff9900;
-
+  background: #ff9900;
 }
-
+.burger_menu:before,
+.burger_menu:after {
+  background: #5ce8ed;
+  content: '';
+  display: block;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+.burger_menu:before {
+  top: 8px;
+}
+.burger_menu:after {
+  top: -8px;
+}
 .navicon {
-    background: #5ce8ed;
-    display: block;
-    height: 2px;
-    position: fixed;
-    right: 55px;
-    transition: .2s ease-out;
-    width: 35px;
-    z-index: 3;
+  background: #5ce8ed;
+  display: block;
+  height: 2px;
+  position: fixed;
+  right: 55px;
+  transition: 0.2s ease-out;
+  width: 35px;
+  z-index: 3;
 }
-
-.burger_menu .navicon:before,
-.burger_menu .navicon:after {
-    background: #5ce8ed;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
+.navicon:before,
+.navicon:after {
+  background: #5ce8ed;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
 }
-
-.burger_menu .navicon:before {
-    top: 8px;
+.navicon:before {
+  top: 8px;
 }
-
-.burger_menu .navicon:after {
-    top: -8px;
+.navicon:after {
+  top: -8px;
 }
-
 @media screen and (max-width: 1199px) {
-    .navbar ul>li>a {
-        padding: 0 15px;
-    }
+  .navbar ul > li > a {
+    padding: 0 15px;
+  }
 }
-
 @media screen and (max-width: 991px) {
-    .logo {
-        display: none;
-    }
-
-    .logo_nav .container {
-        justify-content: center;
-        padding: 15px 0;
-    }
+  .logo {
+    display: none;
+  }
+  .logo_nav .container {
+    justify-content: center;
+    padding: 15px 0;
+  }
 }
-
 @media screen and (max-width: 767px) {
-    .burger_menu {
-        display: block;
-    }
-
-    .navbar .burger_menu {
-        display: block;
-        /* outline-offset: -3px; */
-        outline: transparent;
-
-    }
-
-    .navbar .menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        position: absolute;
-        left: -100%;
-        top: 115px;
-        width: 50%;
-        height: calc(100vh - 115px);
-        background: rgba(0, 0, 0, 0.4);
-        text-align: center;
-        transition: all 1s;
-        overflow: hidden;
-
-    }
-
-    .menu li a span {
-        overflow: hidden;
-    }
-
-    .logo_nav .container {
-        height: 50px;
-        padding-top: 150px;
-        justify-content: flex-start;
-    }
-
-    .navbar a:hover span {
-        color: #ff9900;
-        transform: translateY(0);
-    }
-
-    .navbar .menu_active {
-        z-index: 2;
-        position: fixed;
-        left: 0;
-    }
-
-    .navbar ul span {
-        color: #5ce8ed;
-    }
-
-    .navbar ul li.active span {
-        color: #ff9900;
-    }
-
-    .menu_active span::before {
-        display: none;
-    }
-
-    .menu li a span {
-        outline-offset: 5px;
-        outline: #5ce8ed 2px solid;
-    }
-
-    .menu_active li a span {
-        margin: 15px 0;
-    }
-
-    .navbar ul>li>a {
-        font-size: 22px;
-        letter-spacing: 8px;
-    }
-
-    .burger_menu_active .navicon {
-        background: transparent;
-    }
-
-    .navbar .burger_menu_active {
-        outline-offset: -3px;
-        outline: #5ce8ed 2px solid;
-    }
-
-    .burger_menu_active .navicon:before {
-        transform: rotate(-45deg);
-        background: #5ce8ed;
-    }
-
-    .burger_menu_active .navicon:after {
-        transform: rotate(45deg);
-        background: #5ce8ed;
-    }
-
-    .burger_menu_active .navicon:before,
-    .burger_menu_active .navicon:after {
-        top: 0;
-    }
-
+  .burger_menu {
+    display: block;
+  }
+  .navbar .burger_menu {
+    display: block;
+    outline: transparent;
+  }
+  .navbar .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    left: -100%;
+    top: 115px;
+    width: 50%;
+    height: calc(100vh - 115px);
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  .navbar a:hover span {
+    color: #ff9900;
+    transform: translateY(0);
+  }
+  .navbar .menu_active {
+    z-index: 2;
+    position: fixed;
+    left: 0;
+  }
+  .navbar ul span {
+    color: #5ce8ed;
+  }
+  .navbar ul li.active span {
+    color: #ff9900;
+  }
+  .navbar ul > li > a {
+    font-size: 22px;
+    letter-spacing: 8px;
+  }
+  .navbar .burger_menu_active {
+    outline-offset: -3px;
+    outline: #5ce8ed 2px solid;
+  }
+  .menu li a span {
+    overflow: hidden;
+    outline-offset: 5px;
+    outline: #5ce8ed 2px solid;
+  }
+  .logo_nav .container {
+    height: 50px;
+    padding-top: 150px;
+    justify-content: flex-start;
+  }
+  .menu_active span::before {
+    display: none;
+  }
+  .menu_active li a span {
+    margin: 15px 0;
+  }
+  .burger_menu_active .navicon {
+    background: transparent;
+  }
+  .burger_menu_active .navicon:before {
+    transform: rotate(-45deg);
+    background: #5ce8ed;
+  }
+  .burger_menu_active .navicon:after {
+    transform: rotate(45deg);
+    background: #5ce8ed;
+  }
+  .burger_menu_active .navicon:before,
+  .burger_menu_active .navicon:after {
+    top: 0;
+  }
 }
-
 @media screen and (max-width: 575px) {
-    .navbar .menu {
-        height: calc(100vh - 70px);
-    }
-
-    .logo_nav .container {
-        padding-top: 105px;
-    }
-
-    .navbar {
-        width: 100%;
-    }
-
-    .navbar .menu {
-        width: 75%;
-        top: 70px;
-        justify-content: space-around;
-        padding: 0;
-    }
-
-
-    .navbar .burger_menu .navicon {
-        right: 25px;
-    }
-
-    .navbar .burger_menu {
-        top: 75px;
-        right: 23px;
-    }
-
-    .menu li {
-        text-align: center;
-    }
+  .navbar {
+    width: 100%;
+  }
+  .navbar .menu {
+    height: calc(100vh - 70px);
+    width: 75%;
+    top: 70px;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .navbar .burger_menu {
+    top: 75px;
+    right: 23px;
+  }
+  .navbar .burger_menu .navicon {
+    right: 25px;
+  }
+  .logo_nav .container {
+    padding-top: 105px;
+  }
+  .menu li {
+    text-align: center;
+  }
 }

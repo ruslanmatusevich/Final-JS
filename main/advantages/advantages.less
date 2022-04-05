@@ -1,0 +1,202 @@
+.advantages {
+    margin-bottom: 70px;
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 0 15px;
+        text-align: left;
+    }
+
+    &_cards {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 10px;
+    }
+
+    &_descr h2 {
+        font-size: 32px;
+        font-weight: normal;
+    }
+
+    &_descr ul {
+        padding: 10px 0;
+        list-style: none;
+
+        li {
+            margin: 10px 0;
+            color: #999999;
+
+            span {
+                color: #ff9900;
+            }
+        }
+    }
+}
+
+.more a {
+    text-transform: uppercase;
+    outline: 1px solid #000000;
+    padding: 8px 40px;
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    display: inline-block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background: #FF9900;
+        z-index: -1;
+        transform: rotate(-45deg) translateY(-8em);
+        transition: 0.4s all;
+    }
+
+    &:hover {
+        color: #ffffff;
+        outline-color: #ff9900;
+
+        &::before {
+            opacity: 1;
+            transform: rotate(0deg) translateY(0);
+            transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+        }
+    }
+}
+
+.card img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    p {
+        text-align: center;
+        margin: 10px 0;
+        color: #999999;
+    }
+
+    h3 {
+        margin: 8px 0;
+        color: #ff9900;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+    }
+}
+
+.view {
+    position: relative;
+    float: none;
+    overflow: hidden;
+    background: #f5f5f5;
+    height: 100%;
+
+    .mask {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        transition: all 0.6s linear;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &:hover .mask {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .advantages {
+        .wrapper {
+            grid-template-columns: 0.6fr 1fr;
+        }
+    }
+
+    .advantages_descr {
+        ul {
+            li {
+                margin: 13px 0;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .advantages {
+        .wrapper {
+            display: block;
+        }
+    }
+
+    .advantages_descr {
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            text-align: center;
+        }
+
+        .more {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
+    .mask {
+        img {
+            object-fit: cover;
+        }
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .advantages {
+        padding: 0;
+
+        .wrapper {
+            padding: 0;
+        }
+    }
+
+    .advantages_cards {
+        display: block;
+    }
+
+    .view {
+        display: flex;
+        height: 280px;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #ff9900;
+
+        &:last-child {
+            border-bottom: 1px solid #ff9900;
+        }
+    }
+}

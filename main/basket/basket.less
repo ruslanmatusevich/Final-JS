@@ -1,0 +1,83 @@
+.basket {
+    padding-top: 50px;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    span {
+        font-size: 1.5em;
+        color: #777777;
+        text-align: center;
+    }
+
+    .container {
+        padding: 37px;
+        display: grid;
+        border: 1px solid #ffffff;
+        margin: 40px auto;
+        background-color: #ff9900;
+        border-radius: 20px;
+        grid-gap: 10px;
+
+        &>div {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin: 5px 0;
+            justify-items: center;
+            border: 1px solid #ffffff;
+            gap: 2px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            align-items: center;
+
+        }
+    }
+}
+
+.route,
+.distance,
+.weight,
+.pay,
+.money,
+.delete {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+    .basket {
+        padding: 40px;
+
+        .container {
+            &>div {
+                align-items: center;
+
+                &>div {
+                    &>span {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .basket {
+        span {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .wrapDiv {
+        display: none;
+    }
+}

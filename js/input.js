@@ -1,6 +1,6 @@
-// переменные
+
 let input = document.querySelector('.input > a'), 
-    input2 = document.querySelector('.input'),
+    entrance = document.querySelector('.input'),
     hello = document.querySelector('.hello'),
     helloText = document.querySelector('.hello_text'),
     out = document.querySelector('.out'),
@@ -12,114 +12,110 @@ let input = document.querySelector('.input > a'),
     login = document.querySelector('.login'),
     inputName = document.querySelector('.login_name'),
     inputPassword = document.querySelector('.login_password'),
-    loginName,
-    password,
     checkbox = document.getElementById('rememberMe'),
-    contLogin = document.querySelector('.container_login');
-    
-    // открыли окно
+    contLogin = document.querySelector('.container_login'),
+    loginName,
+    password;
+    // открыли окно, посмотрели - дождь)))
 
-    window.addEventListener ('DOMContentLoaded', function() {
-        showName();
-           });
-    //вход   
-      function showName() {
-        /* console.log(localStorage.getItem(key)); */
+window.addEventListener ('DOMContentLoaded', function() {
+    showName();
+});
 
-        
-            
+function showName() {
 
-            if ((localStorage.length == 0))  {
-                input2.style.display = 'flex';
-                input.innerHTML = "Войти";
-                /* console.log(input.innerHTML) */
-                
-            } else {
+    if ((localStorage.length == 0))  {
+        entrance.style.display = 'flex';
+        input.textContent = "Войти";
 
-                for (let i = 0; i < localStorage.length; i++) {
+    } else {
+
+        for (let i = 0; i < localStorage.length; i++) {
+
                     let key = localStorage.key(i);
 
                 if (localStorage.getItem(key).startsWith("{")) continue;
-                /* console.log(key);
-                console.log(localStorage.getItem(key)); */
+               
 
                 hello.style.display = 'flex';
-                helloText.innerHTML = `Привет ${key}`;
+                helloText.textContent = `Привет ${key}`;
                 out.style.display = 'flex';
-                outText.innerHTML = 'Выйти';
-                input2.style.display = 'none';
-            }
-        
-        
+                outText.textContent = 'Выйти';
+                entrance.style.display = 'none';
+        }
+    }
+};
 
-
-       /*  if ( localStorage.key(localStorage.length - 1)) { 
-            let key = localStorage.key(localStorage.length - 1); */
-}
-      }
-    input2.addEventListener('click', function() {
-        document.querySelector('.login').style.display = 'block';
+entrance.addEventListener('click', function() {
+    document.querySelector('.login').style.display = 'block';
     });
-
-
 //выход
-    out.addEventListener('click', function() {
-        localStorage.clear();
-        output();
-    })
+out.addEventListener('click', function() {
+    localStorage.clear();
+    output();
+});
 
+function output () {
+    entrance.style.display = 'flex';
+    hello.style.display = 'none';
+    out.style.display = 'none';
+    window.location.reload (); 
+}
 //проверка имени
 function validateName(str) {
+
     if (str == null || str == '') {
-        loginAlertText.innerHTML = ('введите имя');
+
+        loginAlertText.textContent = ('введите имя');
         inputName.addEventListener('click', function() {
-            loginAlertText.innerHTML = ('');
-        })
+
+            loginAlertText.textContent = ('');
+        });
+
         return false; 
-    } 
+    }
    return true;
 }
-
 //проверка пароля
 function validatePassword(str) {
 
     if (str == null || str == '') {
-        passwordAlertText.innerHTML = ('введите пароль');
+        passwordAlertText.textContent = ('введите пароль');
 
         inputPassword.addEventListener('click', function() {
-            passwordAlertText.innerHTML = ('');
+            passwordAlertText.textContent = ('');
         });
         return false;
     }
 
     if (str.length < 7) {
-        passwordAlertText.innerHTML = ('пароль должен содержать минимум 8 символов');
+        passwordAlertText.textContent = ('пароль должен содержать минимум 8 символов');
         inputPassword.addEventListener('click', function() {
-            passwordAlertText.innerHTML = ('');
+            passwordAlertText.textContent = ('');
         });
         return false;
     }
 
     if (str.search(/[a-z]/) === -1) {
-        passwordAlertText.innerHTML = ('пароль должен содержать английские прописные буквы');
+        passwordAlertText.textContent = ('пароль должен содержать английские прописные буквы');
         inputPassword.addEventListener('click', function() {
-            passwordAlertText.innerHTML = ('');
+            passwordAlertText.textContent = ('');
         });
         return false;
     }
 
     if (str.search(/[A-Z]/) === -1) {
-        passwordAlertText.innerHTML = ('пароль должен содержать английские заглавные буквы');
+        passwordAlertText.textContent = ('пароль должен содержать английские заглавные буквы');
         inputPassword.addEventListener('click', function() {
-            passwordAlertText.innerHTML = ('');
+            passwordAlertText.textContent = ('');
         });
         return false;
     }
 
     if (str.search(/[0123456789]/) === -1) {
-        passwordAlertText.innerHTML = ('пароль должен содержать цифры');
+        passwordAlertText.textContent = ('пароль должен содержать цифры');
         inputPassword.addEventListener('click', function() {
-            passwordAlertText.innerHTML = ('');
+            passwordAlertText.textContent = ('');
         });
         return false;
     }
@@ -130,9 +126,9 @@ function validatePassword(str) {
 //нажимаем кнопку входа
 document.querySelector('.login_submit').addEventListener('click', () => {
 
-        loginName = document.querySelector('.login_name').value;
-        password = document.querySelector('.login_password').value;
-        password = password.trim();
+    loginName = document.querySelector('.login_name').value;
+    password = document.querySelector('.login_password').value;
+    password = password.trim();
 
     if (validateName(loginName) === false) {
         
@@ -145,24 +141,23 @@ document.querySelector('.login_submit').addEventListener('click', () => {
    localStorage.setItem(loginName, password);
 
     inp(loginName, password);
+
     document.querySelector('.login_name').value = '';
     document.querySelector('.login_password').value = '';
 });
 
-function output () {
-    input2.style.display = 'flex';
-    hello.style.display = 'none';
-    out.style.display = 'none';
-    window.location.reload (); 
-}
+
 
 function inp (name, pass) {
+
     if (name  && pass ) {
-        input2.style.display = 'none';
+
+        entrance.style.display = 'none';
         hello.style.display = 'flex';
-        helloText.innerHTML = `Привет ${name}`;
+        helloText.textContent = `Привет ${name}`;
         out.style.display = 'flex';
-        outText.innerHTML = 'Выйти';
+        outText.textContent = 'Выйти';
         contLogin.style.display = 'none';
-       }
+    }
 }
+
