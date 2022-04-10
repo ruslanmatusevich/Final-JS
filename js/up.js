@@ -1,5 +1,6 @@
 
-const pageUp = document.querySelector('.pageup');
+ import {imageOut} from '../main/about/scriptImg.js';
+export const pageUp = document.querySelector('.pageup');
 
 window.addEventListener('scroll', function() {
 	

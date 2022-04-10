@@ -1,7 +1,10 @@
+import {from} from './calc.js';
 
-let calculation ,
-    basket = {};
+export let calculation ,
+           inBasket = document.getElementById('in_basket'),
+           basket = {};
         
+           /* if (document.location.href.includes('index.html')) { */
 inBasket.addEventListener('click', function () {
   
     basket.route = `${fromText.textContent} - ${whereText.textContent}`;
@@ -13,5 +16,5 @@ inBasket.addEventListener('click', function () {
     calculation = localStorage.length;
     localStorage.setItem(calculation, JSON.stringify(basket));
 });
-
+   /*  } */
 

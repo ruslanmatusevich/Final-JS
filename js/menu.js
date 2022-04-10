@@ -1,6 +1,6 @@
 
 
-let elements = ['Главная', 'Сервис', 'О нас', 'Новости', 'Контакты'],
+export let elements = ['Главная', 'Сервис', 'О нас', 'Новости', 'Контакты'],
     wrapper = document.querySelector('.navbar .menu'),
     pageName = ['index.html', 'services.html', 'about.html', 'news.html', 'contacts.html'],
     childLi,

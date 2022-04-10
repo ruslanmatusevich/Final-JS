@@ -1,9 +1,28 @@
+export const tab = document.querySelectorAll('.info_header_tab'),
+      info = document.querySelector('.info_header'),
+      tabContent = document.querySelectorAll('.info_tabcontent');
 
-const tab = document.querySelectorAll('.info_header_tab'),
-    info = document.querySelector('.info_header'),
-    tabContent = document.querySelectorAll('.info_tabcontent');
+      if (info) {
 
-function hideTabContent(currentTab) {
+        if (document.location.href.includes('index.html')) {
+ info.addEventListener('click', function(event) {
+
+        let target = event.target;
+    
+        if (target && target.classList.contains('info_header_tab')) {
+    
+            for (let i = 0; i < tab.length; i++) {
+    
+                 if (target == tab[i]) {
+                    hideTabContent(0);
+                    showTabContent(i);
+                    break;
+                 }
+            }
+        }
+    });
+}
+   function hideTabContent(currentTab) {
 
     for (let i = currentTab; i < tabContent.length; i++) {
 
@@ -20,20 +39,5 @@ function showTabContent(currentTab) {
         tabContent[currentTab].classList.add('show');
     }
 }
+      }
 
-info.addEventListener('click', function(event) {
-
-    let target = event.target;
-
-    if (target && target.classList.contains('info_header_tab')) {
-
-        for (let i = 0; i < tab.length; i++) {
-
-             if (target == tab[i]) {
-                hideTabContent(0);
-                showTabContent(i);
-                break;
-             }
-        }
-    }
-});

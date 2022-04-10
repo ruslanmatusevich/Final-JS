@@ -1,4 +1,4 @@
-const   menu = document.querySelector('.navbar .menu'),
+export const   menu = document.querySelector('.navbar .menu'),
 		menuItem = document.querySelectorAll('.menu > li > a > span'),
 		hamburger = document.querySelector('.burger_menu');
 

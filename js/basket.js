@@ -1,11 +1,13 @@
 
-const boxBask = document.querySelector('.wrapDiv .container');
+export const boxBask = document.querySelector('.wrapDiv .container');
 const wrapDiv = document.querySelector('.wrapDiv');
 const names = ['маршрут', 'расстояние', 'вес', 'тип оплаты', 'итого'];
 const valuesClass = ['route', 'distance', 'weight', 'pay', 'money', 'delete'];
 let newDivBask;
 
 newDivBask = document.createElement('div');
+
+if (document.location.href.includes('basket.html')) {
 
 for (let i = 0; i < names.length; i++) {
 
@@ -22,7 +24,8 @@ for (let i = 0; i < names.length; i++) {
 };
 
 boxBask.appendChild(newDivBask);
-    
+
+
 let arr = [];
 
 for (let i = 0; i < localStorage.length; i++) {
@@ -58,6 +61,6 @@ for (let i = 0; i < localStorage.length; i++) {
         
     }
 };
-
+}
 
 

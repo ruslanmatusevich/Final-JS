@@ -1,6 +1,7 @@
+import {images} from './images.js';
 
-const imageOut = document.querySelector('.image_out'),
-      carModel = document.querySelector('.car_model'),
+export const imageOut = document.querySelector('.image_out');
+    const  carModel = document.querySelector('.car_model'),
       carPower = document.querySelector('.car_power'),
       carPayload = document.querySelector('.car_payload'),
       carSpeed = document.querySelector('.car_speed'),
@@ -8,11 +9,29 @@ const imageOut = document.querySelector('.image_out'),
       more = document.querySelector('.about_descr_item_right .more > a'),
       carWrap = document.querySelector('.info_car_wrap');
       
-more.addEventListener('click' , function() {
+       /* const setListener = (element, type, handler) => {
+           if(element) {
+               return;
+           }
+           element.addEventListener(type, handler);
+           return () => {
+               element.removeEventListener(type,handler);
+           };
+       } */
+if(more) {
+    more.addEventListener('click' , showMore);
+
+
+ 
+ function showMore() {
 
 carWrap.style.display = 'block';
 
-});
+};
+
+/* setListener(more, 'click', () => {
+    carWrap.style.display = 'block';
+}); */
 
 for (let key in images) {
 
@@ -22,6 +41,10 @@ for (let key in images) {
      imageOut.append(img);
 
     }
+};
+
+if (imageOut) {
+
 
 imageOut.addEventListener('click', showInfo);
 
@@ -41,4 +64,4 @@ function showInfo(event) {
     document.querySelectorAll('.image_out img').forEach(item => item.classList.remove('active'));
     event.target.classList.add('active');
 }
-
+}

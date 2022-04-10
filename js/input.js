@@ -1,5 +1,5 @@
 
-let input = document.querySelector('.input > a'), 
+export let input = document.querySelector('.input > a'), 
     entrance = document.querySelector('.input'),
     hello = document.querySelector('.hello'),
     helloText = document.querySelector('.hello_text'),

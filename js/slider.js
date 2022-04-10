@@ -1,11 +1,13 @@
 
-let slideIndex = 1,
+export let slideIndex = 1,
     slides = document.querySelectorAll('.slider_item'),
     prev = document.querySelector('.prev'),
     next = document.querySelector('.next'); 
 
-showSlides(slideIndex);
 
+    if (document.location.href.includes('index.html')) {
+
+    
 function showSlides(num) {
 
     if (num > slides.length) {
@@ -20,6 +22,12 @@ function showSlides(num) {
     slides[slideIndex - 1].style.display = 'flex';
 }    
 
+
+
+    showSlides(slideIndex);
+
+
+
 function anotherSlides(num) {
     showSlides(slideIndex += num);
 }
@@ -31,3 +39,4 @@ prev.addEventListener('click', function() {
 next.addEventListener('click', function() {
     anotherSlides(1);   
 });
+    }

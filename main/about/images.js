@@ -1,5 +1,5 @@
 
- let images = {
+ export let images = {
 
     "volvo": {
         "model": 'марка грузовика - Volvo',

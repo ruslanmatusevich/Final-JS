@@ -1,11 +1,11 @@
 
-let from = document.getElementById('from'),
+export let from = document.getElementById('from'),
     where = document.getElementById('where'),
     payment = document.getElementById('payment'),
     weight = document.querySelector('.weight'),
     distance = document.getElementById('distance'),
     totalSum = document.getElementById('total'),
-    inBasket = document.getElementById('in_basket'),
+    
     calc = document.getElementById('calc'),
     enter = document.querySelector('.enter'),
     total = 0,
@@ -18,10 +18,10 @@ let from = document.getElementById('from'),
     paymentText,
     whereText;
     
-    distance.textContent = 0;
-    totalSum.textContent = 0;
+    /* distance.textContent = 0;
+    totalSum.textContent = 0; */
 
-
+    if (document.location.href.includes('index.html')) {
 weight.addEventListener('change', function() {
 
     weightSum = +this.value;
@@ -82,6 +82,7 @@ calc.addEventListener('click', function() {
         if ((weightSum > 0) && (curPayment != 0) && (totalDistance != 0)) {
 
             totalSum.textContent = ((total * curPayment) * totalDistance).toFixed();
+            console.log(fromtext)
 
         } else {
 
@@ -89,7 +90,7 @@ calc.addEventListener('click', function() {
         }
     }
 });
-    
+}
                 
 
                 
